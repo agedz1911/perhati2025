@@ -1,19 +1,22 @@
-<div class="bg-slate-50">
+<div class="bg-slate-50 relative">
     {{-- Start Hero --}}
 
-    <div class="hero min-h-screen bg-endeavour-200 mb-0 border" style="background-image: url(images/bg2.png);">
-        {{-- <div class="hero-overlay bg-opacity-60"></div> --}}
+    <div class="hero min-h-screen mb-0 bg-endeavour-600 bg-[url('images/bg2.png')]">
+        <div class="hero-overlay bg-opacity-20"></div>
         <div class="hero-content flex-col justify-start md:flex-row-reverse">
             <img src="images/landing-new.png" class="lg:max-w-lg max-w-xs" />
             <div class="lg:w-[500px] lg:-mt-40">
                 <img src="images/logo/logo.png" class="max-w-sm lg:max-w-md" alt="">
-                <div class="pt-6">
-                    <p class=" text-primary-950">Lombok, West Nusa Tenggara, Indonesia <br>Oktober, 30th - November, 1st
-                        2025</p>
-
-                    <button class="btn bg-primary-800 hover:bg-primary-600 border-none text-white my-3">Register
-                        Now</button>
-                    <button class="btn btn-outline text-white hover:bg-primary-800">Read More</button>
+                <div class="flex flex-col gap-4 mt-5">
+                    <h1 class="text-4xl">The XX National Congress of PERHATI-KL</h1>
+                    <p class="text-endeavour-900">Lombok, West Nusa Tenggara, Indonesia <br>
+                        Oktober, 30th - November, 1st 2025</p>
+                    <div class="flex flex-row gap-5">
+                        <button class="btn bg-endeavour-800 hover:bg-endeavour-600 border-none text-white">Register
+                            Now</button>
+                        <button class="btn btn-outline text-white hover:border-none hover:bg-endeavour-800">Read
+                            More</button>
+                    </div>
                 </div>
             </div>
         </div>
