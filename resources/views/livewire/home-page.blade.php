@@ -1,24 +1,25 @@
 <div class="bg-slate-50 relative">
     {{-- Start Hero --}}
 
-    <div class="hero min-h-screen mb-0 bg-endeavour-600 bg-[url('images/bg2.png')]">
+    <div class="hero min-h-screen mb-0 bg-sky-50 bg-[url('images/bg2.png')]">
         <div class="hero-overlay bg-opacity-20"></div>
-        <div class="hero-content flex-col justify-start md:flex-row-reverse">
-            <img src="images/landing-new.png" class="lg:max-w-lg max-w-xs" />
+        <div class="hero-content flex-col justify-start md:flex-row">
             <div class="lg:w-[500px] lg:-mt-40">
-                <img src="images/logo/logo.png" class="max-w-sm lg:max-w-md" alt="">
+                <img src="images/logo/logo.png" class="max-w-sm" alt="">
                 <div class="flex flex-col gap-4 mt-5">
-                    <h1 class="text-4xl">The XX National Congress of PERHATI-KL</h1>
-                    <p class="text-endeavour-900">Lombok, West Nusa Tenggara, Indonesia <br>
-                        Oktober, 30th - November, 1st 2025</p>
+                    <h1 class="text-4xl font-semibold">The XX National Congress of PERHATI-KL
+                    </h1>
+
+                    <p class="text-biscay-900">Lombok, West Nusa Tenggara, Indonesia <br>
+                        Oktober, 30<sup>th</sup> - November, 1<sup>st</sup> 2025</p>
                     <div class="flex flex-row gap-5">
-                        <button class="btn bg-endeavour-800 hover:bg-endeavour-600 border-none text-white">Register
-                            Now</button>
-                        <button class="btn btn-outline text-white hover:border-none hover:bg-endeavour-800">Read
-                            More</button>
+                        <button class="btn btn-info text-white">Register Now</button>
+                        <button class="btn btn-outline hover:bg-info">Read More</button>
                     </div>
                 </div>
             </div>
+            <img src="images/landing-new.png" class="lg:max-w-lg max-w-xs" />
+
         </div>
     </div>
 
@@ -26,25 +27,25 @@
     <div class="md:-mt-20 mb-20 lg:mb-40 container mx-auto">
         <div class="grid grid-cols-2  md:grid-cols-4 justify-items-center px-3 w-full gap-2  mt-5 md:mt-8"
             id="countdown">
-            <div class="card lg:w-3/4 w-full bg-endeavour-700 text-white shadow-xl">
+            <div class="card lg:w-3/4 w-full bg-primary text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="days"></h2>
                     <p class="text-center">Days</p>
                 </div>
             </div>
-            <div class="card bg-endeavour-700 lg:w-3/4 w-full text-white shadow-xl">
+            <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="hours"></h2>
                     <p class="text-center">Hours</p>
                 </div>
             </div>
-            <div class="card bg-endeavour-700 lg:w-3/4 w-full text-white shadow-xl">
+            <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="mins"></h2>
                     <p class="text-center">Minutes</p>
                 </div>
             </div>
-            <div class="card bg-endeavour-700 lg:w-3/4 w-full text-white shadow-xl">
+            <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="secs"></h2>
                     <p class="text-center">Seconds</p>
@@ -57,12 +58,12 @@
     {{-- Start About --}}
     <div class="pb-24 px-4 mb-5 container mx-auto items-center">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
-            <div class="mockup-window relative bg-base-300 border w-full">
+            <div class="mockup-window bg-gray-200 relative border w-full">
                 <div class="absolute right-0 px-4 top-3">
                     <p class="text-black font-semibold"><i class="fa-solid fa-circle-dot text-green-500"></i> PERHATI-KL
                     </p>
                 </div>
-                <div class="bg-base-200 flex justify-center px-4 py-16">
+                <div class="bg-gray-50 flex justify-center px-4 py-16">
                     <iframe class="w-full rounded-lg" width="560" height="400"
                         src="https://www.youtube.com/embed/EEwjG5WVJ98?si=Bxh9cjaYtqfO64no" title="YouTube video player"
                         frameborder="0"
@@ -71,18 +72,19 @@
                 </div>
             </div>
             <div class="w-full px-0 lg:pl-10 lg:py-5">
-                <h1 class="text-4xl mt-5 text-primary-800 mb-5 font-bold">The XX National Congress of PERHATI-KL</h1>
-                <p class="text-slate-400 italic lg:mt-10 mt-4">"Theme: Lorem ipsum dolor sit amet, consectetur
+                <h1 class="text-4xl mt-5 text-info font-bold">The XX National Congress of </h1>
+                <h1 class="text-xl mt-5 text-info font-bold">The Association of Indonesian Head and Neck Surgery ENT
+                    Specialists </h1>
+                {{-- <p class="text-slate-400 italic mt-5">"Theme: Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit "
-                </p>
+                </p> --}}
                 <div class="font-semibold mt-5 text-slate-500">
-                    <p>October 25<sup>th</sup> - 26<sup>th</sup>, 2024</p>
-                    <p>JW Marriot Hotel, Jakarta, Indonesia</p>
+                    <p>Lombok, West Nusa Tenggara, Indonesia </p>
+                    <p>Oktober, 30<sup>th</sup> - November, 1<sup>st</sup> 2025</p>
                 </div>
 
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn w-1/3 btn btn-primary border-none  ">Register
-                        Now</button>
+                    <button class="btn w-1/3 btn-primary border-none text-white">Register Now</button>
                     <button class="btn w-1/3 btn-outline-primary ">Read More</button>
                 </div>
 
@@ -90,41 +92,86 @@
         </div>
     </div>
     {{-- End About --}}
-    <div class="pb-24 px-4 mb-10 container mx-auto items-center mt-10">
-        <div class="flex flex-col lg:flex-row justify-between gap-20">
-            <div class="lg:w-1/2 w-full">
-                <img class="float-left rounded-full ring ring-primary ring-offset-base-100 ring-offset-4 w-32 m-3"
-                    src="storage/10/1k7yJRWd2d3MeeNC5CxnNyhDJXmalD-metaQ2hhaXJtYW4gZHIuIFNvbnkgSGlsYWwgV2ljYWtzb25vLCBTcC5KUChLKS5wbmc=-.png">
-                <h2 class="text-2xl font-semibold text-primary-700 mb-2">Welcome Message</h2>
-                <p class="text-justify text-slate-600 mb-4">Weekend Course in Cardiology (WECOC): Augmenting
-                    Intelligence in Cardiology and Vascular Medicine.</p>
-                <p class="text-justify text-slate-600 mb-4">The Weekend Course in Cardiology (WECOC), hosted by the
-                    Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia,
-                    has been a cornerstone of scientific excellence since its inception in 1989. This annual event,
-                    which continues to thrive, serves as a vital platform for medical professionals to stay abreast of
-                    cutting-edge advancements in cardiology.</p>
-                <p class="text-justify text-slate-600 mb-4">Save the Date!.</p>
-                <p class="text-justify text-slate-600 mb-4">The 36<sup>th</sup> Weekend Course in Cardiology is
-                    scheduled for October 25<sup>th</sup> - 26<sup>th</sup> , 2024. Mark your calendars and join us for
-                    an enriching experience that promises to elevate cardiovascular care.</p>
-                <a href="congress-information#welcome-message"
-                    class="float-end mt-10 btn bg-primary-800 text-slate-100 border-none hover:bg-primary-600">Read
-                    More</a>
+    <div class="py-24 px-4 mb-10 bg-slate-100">
+        <div class="container mx-auto items-center">
+            <div class="flex items-center justify-between">
+                <div class="badge badge-primary p-8">
+                    <h1 class="text-2xl text-white font-semibold">Welcome Remarks</h1>
+                </div>
+                <i class="fa-regular text-primary fa-message text-5xl"></i>
             </div>
-            <div class="lg:w-1/2 w-full">
-                <div class="mockup-window border bg-primary-300 bg-opacity-25">
-                    <div class="flex justify-center px-4 py-5 bg-slate-100">
-                        <video class=" rounded-lg" controls muted autoplay loop>
-                            <source src="images/video/wecoc-teaser.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+            <div class="flex flex-col items-center">
+                <div class="pt-20 pb-10 justify-center flex md:items-center lg:items-start flex-col lg:flex-row gap-5">
+                    <div class="flex items-start flex-row gap-3">
+                        <div class="avatar">
+                            <div class="w-20 rounded-md">
+                                <img src="images/speakers.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
+                            <div class="card-body">
+                                <h2 class="card-title text-biscay-500">General Chairperson of PP PERHATI-KL</h2>
+                                <p class=" leading-8 text-slate-400">" Welcome to The XX PERHATI-KL National Congress
+                                    which be held in Lombok from 30th October to 1st November 2025. The National
+                                    Congress holds particular significance as it will culminate in the election of the
+                                    General Chairman for the forthcoming tenure spanning 2025-2028. "</p>
+                                <div class="card-actions">
+                                    <p class="font-bold text-primary">- Dr. Dr. Yussy Afriani Dewi,
+                                        Sp.T.H.T.B.K.L.Subsp.Onk(K), M.Kes, FICS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start flex-row gap-3">
+                        <div class="avatar">
+                            <div class="w-20 rounded-md">
+                                <img src="images/speakers.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
+                            <div class="card-body">
+                                <h2 class="card-title text-biscay-500">Chairman of PERHATI-KL West Nusa Tenggara Barat
+                                    Branch</h2>
+                                <p class=" leading-8 text-slate-400">" This congress marks a significant milestone in
+                                    our journey towards advancing the field of Otorhinolaryngology and Head and Neck
+                                    Surgery. Set against the backdrop of the captivating beauty of Lombok, this event
+                                    promises to be an enriching and enlightening experience for all participants. "</p>
+                                <div class="card-actions">
+                                    <p class="font-bold text-primary">- dr. Mochammad Alfian Sulaksana,
+                                        Sp.T.H.T.B.K.L. Subsp.Onk(K), FICS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start flex-row gap-3">
+                        <div class="avatar">
+                            <div class="w-20 rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
+                                <img src="images/hamsu.png" class="" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
+                            <div class="card-body">
+                                <h2 class="card-title text-biscay-500">Chairman of XX PERHATI-KL National Congress</h2>
+                                <p class=" leading-8 text-slate-400">" As the Chairperson of the local organizing
+                                    committee, I am thrilled to inform you that we have meticulously prepared the
+                                    infrastructure and facilities to ensure a seamless and enjoyable experience for all
+                                    attendees. From accommodations hotel to efficient transportation arrangements and
+                                    other essential amenities, we have taken every measure to meet participant needs. "
+                                </p>
+                                <div class="card-actions">
+                                    <p class="font-bold text-primary">- Prof. Dr. dr. Hamsu Kadriyan,
+                                        Sp.T.H.T.B.K.L.Subsp.Onk(K), M.Kes, FICS</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <p class="btn btn-primary w-1/5 text-center rounded-badge text-white">Read More <i class="fa-solid fa-angles-right"></i></p>
             </div>
         </div>
     </div>
     {{-- Start Counter --}}
-    <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
+    {{-- <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
         <div
             class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
             <div class="flex items-center gap-5">
@@ -206,10 +253,10 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
     {{-- End Counter --}}
     {{-- Start Map --}}
-    <div class="bg-local pt-40 pb-52 lg:px-20 px-5 bg-blog">
+    {{-- <div class="bg-local pt-40 pb-52 lg:px-20 px-5 bg-blog">
         <div class="w-full mb-10">
             <iframe class="w-full rounded-lg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5968203715424!2d106.7951294746461!3d-6.184677660597026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f68da8842883%3A0x1b255ae63d716ca0!2sPusat%20Jantung%20Nasional%20Harapan%20Kita!5e0!3m2!1sid!2sid!4v1718088658161!5m2!1sid!2sid"
@@ -234,7 +281,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- End Map --}}
 </div>

@@ -12,11 +12,12 @@ export default {
         themes: [
             {
                 mytheme: {
-                    primary: "#12599e",
+                    primary: "#1f2b5d",
                     secondary: "#5400fe",
                     accent: "#198754",
+                    muted: "#8492a6 ",
                     neutral: "#e5e7eb",
-                    info: "#0000ff",
+                    info: "#1e448d",
                     success: "#00ff00",
                     warning: "#f2e900",
                     error: "#ff0000",
@@ -27,18 +28,18 @@ export default {
     theme: {
         extend: {
             colors: {
-                endeavour: {
-                    50: "#f1f7fe",
-                    100: "#e3eefb",
-                    200: "#c0dcf7",
-                    300: "#88c0f1",
-                    400: "#49a1e7",
-                    500: "#2185d6",
-                    600: "#1368b6",
-                    700: "#12599e",
-                    800: "#12487a",
-                    900: "#153d65",
-                    950: "#0e2743",
+                perhati: {
+                    50: "#f0f5fe",
+                    100: "#dde9fc",
+                    200: "#c3d9fa",
+                    300: "#9ac2f6",
+                    400: "#69a1f1",
+                    500: "#467feb",
+                    600: "#3162df",
+                    700: "#284dcd",
+                    800: "#2740a6",
+                    900: "#253a83",
+                    950: "#1f2b5d",
                 },
             },
         },

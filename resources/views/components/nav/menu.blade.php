@@ -22,11 +22,11 @@
               <div class="mobile-menu-close">&times;</div>
             </div>
             <ul class="site-menu-main">
-              <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
-                <a href="/"  class="nav-link-item hover:text-primary-500">Home</a>
+              <li class="nav-item {{ request()->is('/') ? 'text-perhati-500' : '' }}">
+                <a href="/"  class="nav-link-item">Home</a>
               </li>
-              <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
-                <a href="javascript:void(0)" class="nav-link-item drop-trigger  hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
+              <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-perhati-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger ">Congress Information <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
@@ -41,8 +41,8 @@
                 </ul>
               </li>
 
-              <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
-                <a href="javascript:void(0)"  class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
+              <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-perhati-500' : '' }}">
+                <a href="javascript:void(0)"  class="nav-link-item drop-trigger">Scientific Program
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
@@ -54,13 +54,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item {{ request()->is('registration*') ? 'text-primary-500' : '' }}">
-                <a href="/registration"  class="nav-link-item hover:text-primary-500">Registration
+              <li class="nav-item {{ request()->is('registration*') ? 'text-perhati-500' : '' }}">
+                <a href="/registration"  class="nav-link-item">Registration
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-primary-500' : '' }}">
-                <a href="javascript:void(0)" class="nav-link-item drop-trigger hover:text-primary-500">Submission
+              <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-perhati-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger">Submission
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-11">
@@ -84,7 +84,7 @@
           <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
-          <!-- <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a> -->
+          <!-- <a class="btn btn-perhati-500 md:hidden sm:inline-block py-4">Login</a> -->
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
