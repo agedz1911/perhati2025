@@ -1,5 +1,6 @@
 <div>
     <div class="flex flex-col items-center">
+        @if (count($committees) > 0)
         @foreach ($uniqueCategories as $category)
         <div class="badge bg-primary-900 text-slate-300 py-5 px-10 text-lg font-semibold my-10">{{ $category }}</div>
         
@@ -40,5 +41,10 @@
             @endforeach
         </div>
         @endforeach
+        @else
+        <div>
+            <p class="text-gray-500 text-2xl font-semibold">No Data</p>
+        </div>
+        @endif
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="bg-slate-50 relative">
+<div class="bg-perhati-50 relative">
     {{-- Start Hero --}}
 
     <div class="hero min-h-screen mb-0 bg-sky-50 bg-[url('images/bg2.png')]">

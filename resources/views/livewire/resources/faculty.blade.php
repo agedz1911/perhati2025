@@ -1,4 +1,5 @@
 <div>
+    @if (count($faculties) > 0)
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
         @foreach ($faculties as $faculty)
         <div class="card glass">
@@ -29,4 +30,9 @@
         @endforeach
 
     </div>
+    @else
+    <div>
+        <p class="text-gray-500 text-2xl text-center font-semibold">No Data</p>
+    </div>
+    @endif
 </div>
