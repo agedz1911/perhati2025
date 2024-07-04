@@ -23,7 +23,7 @@ class ScheduleSession extends Model
 
     public function moderator(): BelongsTo
     {
-        return $this->belongsTo(faculty::class);
+        return $this->belongsTo(Faculty::class);
     }
 
     public function schedule(): HasMany
