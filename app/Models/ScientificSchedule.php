@@ -21,7 +21,7 @@ class ScientificSchedule extends Model
 
     public function faculty(): BelongsTo
     {
-        return $this->belongsTo(faculty::class);
+        return $this->belongsTo(Faculty::class);
     }
 
     public function session(): BelongsTo
