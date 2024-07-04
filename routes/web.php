@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomePage::class);
 Route::prefix('/congress-information')->group(function () {
     Route::get('/', CongressInformation::class);
-    Route::get('#welcome-message', CongressInformation::class);
+    Route::get('#welcome-remarks', CongressInformation::class);
     Route::get('#organizing-committee', CongressInformation::class);
     Route::get('#faculties', CongressInformation::class);
 });

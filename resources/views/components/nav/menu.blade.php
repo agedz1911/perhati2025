@@ -30,7 +30,7 @@
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
-                    <a href="/congress-information#welcome-message">Welcome Message</a>
+                    <a href="/congress-information#welcome-remarks">Welcome Remarks</a>
                   </li>
                   <li class="sub-menu--item">
                     <a href="/congress-information#organizing-committee">Organizing Committee</a>
