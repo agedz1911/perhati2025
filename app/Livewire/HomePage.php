@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\User;
+use App\Models\WelcomeMessage;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -25,6 +26,7 @@ class HomePage extends Component
     
     public function render()
     {
-        return view('livewire.home-page');
+        $messages = WelcomeMessage::where('is_active', 1)->orderBy('no_urut', 'asc')->get();
+        return view('livewire.home-page', ['messages' => $messages]);
     }
 }

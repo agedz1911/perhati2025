@@ -102,76 +102,49 @@
             </div>
             <div class="flex flex-col items-center">
                 <div class="pt-20 pb-10 justify-center flex md:items-center lg:items-start flex-col lg:flex-row gap-5">
-                    <div class="flex items-start flex-row gap-3">
-                        <div class="avatar">
-                            <div class="w-20 rounded-md">
-                                <img src="images/speakers.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
-                            <div class="card-body">
-                                <h2 class="card-title text-biscay-500">General Chairperson of PP PERHATI-KL</h2>
-                                <p class=" leading-8 text-slate-400">" Welcome to The XX PERHATI-KL National Congress
-                                    which be held in Lombok from 30th October to 1st November 2025. The National
-                                    Congress holds particular significance as it will culminate in the election of the
-                                    General Chairman for the forthcoming tenure spanning 2025-2028. "</p>
-                                <div class="card-actions">
-                                    <p class="font-bold text-primary">- Dr. Dr. Yussy Afriani Dewi,
-                                        Sp.T.H.T.B.K.L.Subsp.Onk(K), M.Kes, FICS</p>
+                    @foreach ($messages as $message)
+                        <div class="flex items-start flex-row gap-3">
+                            @if ($message->getMedia('welcomeMessage')->isEmpty())
+                                <div class="">
+                                    <div class="w-20 rounded-md">
+                                        <img src="{{ asset('images/speakers.jpg') }}" alt="Default Doctor Image"
+                                            class="object-cover rounded-lg w-20" />
+                                    </div>
+                                </div>
+                            @else
+                                @foreach ($message->getMedia('welcomeMessage') as $image)
+                                    <div class="">
+                                        <div class="w-20 rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
+                                            <img src="{{ $image->getUrl() }}" class="object-cover w-20 rounded-lg"
+                                                alt="{{ $message->name }}" />
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                            <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
+                                <div class="card-body ">
+                                    <h2 class="card-title text-biscay-500">{{ $message->title }}</h2>
+                                    <div class="line-clamp-6">{!! $message->description !!}
+                                    </div>
+                                    <div class="card-actions justify-end">
+                                        <a class="text-sm text-perhati-600" href="">Read More</a>
+                                    </div>
+                                    <div class="card-actions mt-3">
+                                        <p class="font-bold text-primary">- {{ $message->name }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-start flex-row gap-3">
-                        <div class="avatar">
-                            <div class="w-20 rounded-md">
-                                <img src="images/speakers.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
-                            <div class="card-body">
-                                <h2 class="card-title text-biscay-500">Chairman of PERHATI-KL West Nusa Tenggara Barat
-                                    Branch</h2>
-                                <p class=" leading-8 text-slate-400">" This congress marks a significant milestone in
-                                    our journey towards advancing the field of Otorhinolaryngology and Head and Neck
-                                    Surgery. Set against the backdrop of the captivating beauty of Lombok, this event
-                                    promises to be an enriching and enlightening experience for all participants. "</p>
-                                <div class="card-actions">
-                                    <p class="font-bold text-primary">- dr. Mochammad Alfian Sulaksana,
-                                        Sp.T.H.T.B.K.L. Subsp.Onk(K), FICS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-start flex-row gap-3">
-                        <div class="avatar">
-                            <div class="w-20 rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
-                                <img src="images/hamsu.png" class="" alt="">
-                            </div>
-                        </div>
-                        <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
-                            <div class="card-body">
-                                <h2 class="card-title text-biscay-500">Chairman of XX PERHATI-KL National Congress</h2>
-                                <p class=" leading-8 text-slate-400">" As the Chairperson of the local organizing
-                                    committee, I am thrilled to inform you that we have meticulously prepared the
-                                    infrastructure and facilities to ensure a seamless and enjoyable experience for all
-                                    attendees. From accommodations hotel to efficient transportation arrangements and
-                                    other essential amenities, we have taken every measure to meet participant needs. "
-                                </p>
-                                <div class="card-actions">
-                                    <p class="font-bold text-primary">- Prof. Dr. dr. Hamsu Kadriyan,
-                                        Sp.T.H.T.B.K.L.Subsp.Onk(K), M.Kes, FICS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <p class="btn btn-primary w-1/5 text-center rounded-badge text-white">Read More <i class="fa-solid fa-angles-right"></i></p>
+                <p class="btn btn-primary  text-center rounded-badge border w-full md:w-1/5">Read More <i
+                        class="fa-solid fa-angles-right"></i></p>
             </div>
         </div>
     </div>
-    {{-- Start Counter --}}
-    {{-- <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
+</div>
+{{-- Start Counter --}}
+{{-- <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
         <div
             class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
             <div class="flex items-center gap-5">
@@ -254,9 +227,9 @@
 
         </div>
     </div> --}}
-    {{-- End Counter --}}
-    {{-- Start Map --}}
-    {{-- <div class="bg-local pt-40 pb-52 lg:px-20 px-5 bg-blog">
+{{-- End Counter --}}
+{{-- Start Map --}}
+{{-- <div class="bg-local pt-40 pb-52 lg:px-20 px-5 bg-blog">
         <div class="w-full mb-10">
             <iframe class="w-full rounded-lg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5968203715424!2d106.7951294746461!3d-6.184677660597026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f68da8842883%3A0x1b255ae63d716ca0!2sPusat%20Jantung%20Nasional%20Harapan%20Kita!5e0!3m2!1sid!2sid!4v1718088658161!5m2!1sid!2sid"
@@ -283,7 +256,7 @@
         </div>
     </div> --}}
 
-    {{-- End Map --}}
+{{-- End Map --}}
 </div>
 
 

@@ -1,7 +1,7 @@
 <div class="bg-perhati-50 ">
     <div class="container mx-auto  border-b border-b-perhati-100">
         <div class="flex flex-col gap-5 justify-between px-3 py-3 lg:flex-row ">
-            <div class="w-full">
+            <div class="w-full lg:pt-20">
                 <img src="images/logo/logo.png" class="max-w-xs" />
                 <h1 class="text-4xl mt-5 text-primary-800 mb-5 font-bold">The XX National Congress of PERHATI-KL</h1>
                 <div class="mt-5">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class=" pt-20 pb-52 lg:px-20 px-5  bg-primary-50" id="welcome-remarks">
+    <div class=" pt-20 pb-20 border-b lg:px-20 px-5  bg-primary-50" id="welcome-remarks">
         <div class="flex-col flex gap-3 mb-16">
             <h4 class="text-2xl text-sky-600 font-semibold">Congress Information</h4>
             <h1 class="text-4xl text-primary font-semibold">Welcome Remarks</h1>
