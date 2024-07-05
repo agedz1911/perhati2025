@@ -123,11 +123,11 @@
                             @endif
                             <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
                                 <div class="card-body ">
-                                    <h2 class="card-title text-biscay-500">{{ $message->title }}</h2>
+                                    <h2 class="card-title text-biscay-500">{!! $message->title !!}</h2>
                                     <div class="line-clamp-6">{!! $message->description !!}
                                     </div>
                                     <div class="card-actions justify-end">
-                                        <a class="text-sm text-perhati-600" href="">Read More</a>
+                                        <a class="text-sm text-perhati-600" href="javascript:void(0)">Read More</a>
                                     </div>
                                     <div class="card-actions mt-3">
                                         <p class="font-bold text-primary">- {{ $message->name }}</p>
@@ -137,8 +137,8 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="btn btn-primary  text-center rounded-badge border w-full md:w-1/5">Read More <i
-                        class="fa-solid fa-angles-right"></i></p>
+                <a href="/congress-information#welcome-remarks" class="btn btn-primary  text-center rounded-badge border w-full md:w-1/5">Read More <i
+                        class="fa-solid fa-angles-right"></i></a>
             </div>
         </div>
     </div>

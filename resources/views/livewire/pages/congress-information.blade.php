@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class=" pt-20 pb-20 border-b lg:px-20 px-5  bg-primary-50" id="welcome-remarks">
+    <div class=" pt-20 pb-20  lg:px-20 px-5  bg-primary-50" id="welcome-remarks">
         <div class="flex-col flex gap-3 mb-16">
             <h4 class="text-2xl text-sky-600 font-semibold">Congress Information</h4>
             <h1 class="text-4xl text-primary font-semibold">Welcome Remarks</h1>
