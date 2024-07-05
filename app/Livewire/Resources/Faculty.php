@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Resources;
 
-use App\Models\faculty as ModelsFaculty;
+use App\Models\Faculty as ModelsFaculty;
 use Livewire\Component;
 
 class Faculty extends Component
