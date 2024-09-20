@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('welcome_messages', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('title')->nullable();
-            $table->string('image')->nullable();
-            $table->text('description')->nullable();
+            $table->json('name')->nullable();
+            $table->json('title')->nullable();
+            $table->json('image')->nullable();
+            $table->json('description')->nullable();
             $table->unsignedBigInteger('is_active')->nullable();
             $table->unsignedBigInteger('no_urut')->nullable();
             $table->timestamps();

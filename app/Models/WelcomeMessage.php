@@ -6,11 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Translatable\HasTranslations;
 
 class WelcomeMessage extends Model implements HasMedia
 {
-    use HasFactory, InteractsWithMedia;
-    
+    use HasFactory, InteractsWithMedia, HasTranslations;
+
     protected $fillable = [
         'name',
         'title',
@@ -18,5 +19,19 @@ class WelcomeMessage extends Model implements HasMedia
         'description',
         'is_active',
         'no_urut'
+    ];
+
+    public array $translatable = [
+        'name',
+        'title',
+        'image',
+        'description',
+    ];
+
+    protected $casts = [
+        'name' => 'array',
+        'title' => 'array',
+        'image' => 'array',
+        'description' => 'array',
     ];
 }

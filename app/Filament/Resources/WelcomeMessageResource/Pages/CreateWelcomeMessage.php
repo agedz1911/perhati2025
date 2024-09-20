@@ -8,5 +8,15 @@ use Filament\Resources\Pages\CreateRecord;
 
 class CreateWelcomeMessage extends CreateRecord
 {
+    use CreateRecord\Concerns\Translatable;
+
     protected static string $resource = WelcomeMessageResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\LocaleSwitcher::make(),
+            // ...
+        ];
+    }
 }

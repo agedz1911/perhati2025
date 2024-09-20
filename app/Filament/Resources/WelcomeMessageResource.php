@@ -19,9 +19,12 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\Concerns\Translatable;
 
 class WelcomeMessageResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = WelcomeMessage::class;
     protected static ?string $navigationGroup = 'Front End Components';
     protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-bottom-center-text';
@@ -73,6 +76,11 @@ class WelcomeMessageResource extends Resource
         return [
             //
         ];
+    }
+
+    public static function getTranslatableLocales(): array
+    {
+        return ['en', 'id', 'ar'];
     }
 
     public static function getPages(): array

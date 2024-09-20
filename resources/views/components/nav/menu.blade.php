@@ -23,57 +23,60 @@
             </div>
             <ul class="site-menu-main">
               <li class="nav-item {{ request()->is('/') ? 'text-perhati-500' : '' }}">
-                <a href="/"  class="nav-link-item">Home</a>
+                <a href="/" class="nav-link-item">{{__('menu.home')}}</a>
               </li>
-              <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-perhati-500' : '' }}">
-                <a href="javascript:void(0)" class="nav-link-item drop-trigger ">Congress Information <i class="fa-solid fa-angle-down"></i>
+              <li
+                class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-perhati-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger ">{{__('menu.congress-info')}} <i
+                    class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
-                    <a href="/congress-information#welcome-remarks">Welcome Remarks</a>
+                    <a href="/congress-information#welcome-remarks">{{__('menu.remarks')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/congress-information#organizing-committee">Organizing Committee</a>
+                    <a href="/congress-information#organizing-committee">{{__('menu.committee')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/congress-information#faculties">Faculties</a>
+                    <a href="/congress-information#faculties">{{__('menu.faculty')}}</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-perhati-500' : '' }}">
-                <a href="javascript:void(0)"  class="nav-link-item drop-trigger">Scientific Program
+              <li
+                class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-perhati-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger">{{__('menu.program')}}
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#at-glance">Program at Glance</a>
+                    <a href="/scientific-program#at-glance">{{__('menu.atglance')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#schedule">Scientific Schedule</a>
+                    <a href="/scientific-program#schedule">{{__('menu.schedule')}}</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item {{ request()->is('registration*') ? 'text-perhati-500' : '' }}">
-                <a href="/registration"  class="nav-link-item">Registration
+                <a href="/registration" class="nav-link-item">{{__('menu.registration')}}
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
               <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-perhati-500' : '' }}">
-                <a href="javascript:void(0)" class="nav-link-item drop-trigger">Submission
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger">{{__('menu.submission')}}
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-11">
                   <li class="sub-menu--item">
-                    <a href="/submission#guideline-abstract">Guideline for Abstract</a>
+                    <a href="/submission#guideline-abstract">{{__('menu.guide-abstract')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/submission#submission">Abstract Submission</a>
+                    <a href="/submission#submission">{{__('menu.abstract')}}</a>
                   </li>
                 </ul>
               </li>
-              
-              
+
+
             </ul>
           </nav>
         </div>
@@ -81,9 +84,13 @@
 
         <!-- Header User Event -->
         <div class="flex items-center gap-1">
-          <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
-          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
-          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
+          <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D"
+            class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
+              class="fa-brands fa-instagram text-rose-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
+              class="fa-brands fa-facebook text-sky-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
+              class="fa-brands fa-square-x-twitter "></i></a>
           <!-- <a class="btn btn-perhati-500 md:hidden sm:inline-block py-4">Login</a> -->
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">

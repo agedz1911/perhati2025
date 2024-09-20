@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Filament\SpatieLaravelTranslatablePlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -61,6 +62,10 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::hex('#12599e'),
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
-            ]);
+            ])
+            ->plugin(
+                SpatieLaravelTranslatablePlugin::make()
+                    ->defaultLocales(['en', 'id', 'ar'])
+            );
     }
 }
