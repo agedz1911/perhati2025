@@ -7,14 +7,14 @@
             <div class="lg:w-[500px] lg:-mt-40">
                 <img src="images/logo/logo.png" class="max-w-sm" alt="">
                 <div class="flex flex-col gap-4 mt-5">
-                    <h1 class="text-4xl font-semibold">The XX National Congress of PERHATI-KL
+                    <h1 class="text-4xl font-semibold">{{ __('home.title')}} PERHATI-KL
                     </h1>
 
-                    <p class="text-biscay-900">Lombok, West Nusa Tenggara, Indonesia <br>
-                        Oktober, 30<sup>th</sup> - November, 1<sup>st</sup> 2025</p>
+                    <p class="text-biscay-900">{{ __('home.venue')}} <br>
+                        {{ __('home.event_date')}}}</p>
                     <div class="flex flex-row gap-5">
-                        <button class="btn btn-info text-white">Register Now</button>
-                        <button class="btn btn-outline hover:bg-info">Read More</button>
+                        <button class="btn btn-info text-white">{{__('home.register')}}</button>
+                        <button class="btn btn-outline hover:bg-info">{{__('home.read_more')}}</button>
                     </div>
                 </div>
             </div>
@@ -30,25 +30,25 @@
             <div class="card lg:w-3/4 w-full bg-primary text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="days"></h2>
-                    <p class="text-center">Days</p>
+                    <p class="text-center">{{__('home.counter_day')}}</p>
                 </div>
             </div>
             <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="hours"></h2>
-                    <p class="text-center">Hours</p>
+                    <p class="text-center">{{__('home.counter_hour')}}</p>
                 </div>
             </div>
             <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="mins"></h2>
-                    <p class="text-center">Minutes</p>
+                    <p class="text-center">{{__('home.counter_minute')}}</p>
                 </div>
             </div>
             <div class="card bg-primary lg:w-3/4 w-full text-white shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-4xl justify-center" id="secs"></h2>
-                    <p class="text-center">Seconds</p>
+                    <p class="text-center">{{__('home.counter_second')}}</p>
                 </div>
             </div>
             <div id="end"></div>
@@ -72,20 +72,19 @@
                 </div>
             </div>
             <div class="w-full px-0 lg:pl-10 lg:py-5">
-                <h1 class="text-4xl mt-5 text-info font-bold">The XX National Congress of </h1>
-                <h1 class="text-xl mt-5 text-info font-bold">The Association of Indonesian Head and Neck Surgery ENT
-                    Specialists </h1>
+                <h1 class="text-4xl mt-5 text-info font-bold">{{__('home.title')}} </h1>
+                <h1 class="text-xl mt-5 text-info font-bold">{{__('home.association')}}</h1>
                 {{-- <p class="text-slate-400 italic mt-5">"Theme: Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit "
                 </p> --}}
                 <div class="font-semibold mt-5 text-slate-500">
-                    <p>Lombok, West Nusa Tenggara, Indonesia </p>
-                    <p>Oktober, 30<sup>th</sup> - November, 1<sup>st</sup> 2025</p>
+                    <p>{{__('home.venue')}} </p>
+                    <p>{{__('home.event_date')}}</p>
                 </div>
 
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn w-1/3 btn-primary border-none text-white">Register Now</button>
-                    <button class="btn w-1/3 btn-outline-primary ">Read More</button>
+                    <button class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</button>
+                    <button class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</button>
                 </div>
 
             </div>
@@ -96,7 +95,7 @@
         <div class="container mx-auto items-center">
             <div class="flex items-center justify-between">
                 <div class="badge badge-primary p-8">
-                    <h1 class="text-2xl text-white font-semibold">Welcome Remarks</h1>
+                    <h1 class="text-2xl text-white font-semibold">{{__('menu.remarks')}}</h1>
                 </div>
                 <i class="fa-regular text-primary fa-message text-5xl"></i>
             </div>
@@ -127,7 +126,7 @@
                                     <div class="line-clamp-6">{!! $message->description !!}
                                     </div>
                                     <div class="card-actions justify-end">
-                                        <a class="text-sm text-perhati-600" href="javascript:void(0)">Read More</a>
+                                        <a class="text-sm text-perhati-600" href="javascript:void(0)">{{__('home.read_more')}}</a>
                                     </div>
                                     <div class="card-actions mt-3">
                                         <p class="font-bold text-primary">- {{ $message->name }}</p>
@@ -137,7 +136,7 @@
                         </div>
                     @endforeach
                 </div>
-                <a href="/congress-information#welcome-remarks" class="btn btn-primary  text-center rounded-badge border w-full md:w-1/5">Read More <i
+                <a href="/congress-information#welcome-remarks" class="btn btn-primary  text-center rounded-badge border w-full md:w-1/5">{{__('home.read_more')}} <i
                         class="fa-solid fa-angles-right"></i></a>
             </div>
         </div>

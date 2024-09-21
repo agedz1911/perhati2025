@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('committees', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('title')->nullable();
-            $table->string('category')->nullable();
+            $table->json('name')->nullable();
+            $table->json('title')->nullable();
+            $table->json('category')->nullable();
             $table->timestamps();
         });
     }

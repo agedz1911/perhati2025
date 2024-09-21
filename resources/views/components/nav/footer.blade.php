@@ -6,9 +6,10 @@
                     <img src="images/logo/logo-dark.png" class="w-32" />
                     <img src="images/logo/logo-icon.png" class="w-32" />
                 </div>
-                <p>The XX National Congress of PERHATI-KL </p>
+                <p>{{__('home.title')}} <br> {{__('home.association')}} </p>
                 <h1 class="font-bold text-2xl mb-0 text-slate-300">Conference Organizer</h1>
-                
+                <p class="mt-0">MCO (Medical Conference Organizer) <br>
+                A Division of PT. Pharma-Pro International</p>
                 <div class="flex flex-row gap-3 items-center">
                     <a role="button" class="btn btn-square hover:bg-info border-primary" href=""><i class="fa-solid fa-envelope text-slate-300"></i></a>
                     <a role="button" class="btn btn-square hover:bg-info border-primary" href=""><i class="fa-solid fa-link text-slate-300"></i></a>
@@ -19,7 +20,7 @@
 
             </nav>
             <nav class="flex-col flex gap-5 text-white">
-                <h1 class="font-bold text-slate-300 text-2xl">Useful Links</h1>
+                <h1 class="font-bold text-slate-300 text-2xl">{{__('home.use_link')}}</h1>
                 <a href="/scientific-program" class="link link-hover">{{__('menu.program')}}</a>
                 <a href="/congress-information" class="link link-hover">{{__('menu.congress-info')}}</a>
                 <a href="/submission" class="link link-hover">{{__('menu.submission')}}</a>
@@ -27,8 +28,8 @@
                 
             </nav>
             <nav class="flex-col flex gap-2 text-white">
-                <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>
-                <p class="text-slate-300">Contact us for the latest news and info.</p>
+                <h1 class="font-semibold text-2xl text-slate-300">{{__('home.get_contact')}}</h1>
+                <p class="text-slate-300">{{__('home.get_contact_us')}}</p>
                 <div class="grid grid-flow-col gap-2">
                     <a href="" data-tip="@gmail.com" class="btn btn-outline hover:bg-primary btn-md tooltip tooltip-bottom py-2 btn-ghost btn-square"><i class="fa-brands fa-youtube text-red-600 text-lg"></i></a>
                     <a href="" data-tip="@ig" class="btn btn-outline hover:bg-primary btn-md tooltip tooltip-bottom py-2 btn-ghost btn-square"><i class="fa-brands fa-instagram text-rose-500 text-lg"></i></a>

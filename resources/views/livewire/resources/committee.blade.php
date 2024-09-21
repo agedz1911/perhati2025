@@ -12,7 +12,7 @@
                                     <li class="mb-2">{{ $committee->name }}
                                         @if ($committee->title != null)
                                             <br>
-                                            <span class="font-semibold ml-3">- {{ $committee->title }}</span>
+                                            <span class="font-semibold ml-3">({{ $committee->title }})</span>
                                         @endif
                                     </li>
                                 </ul>

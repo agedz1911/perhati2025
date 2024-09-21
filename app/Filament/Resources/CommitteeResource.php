@@ -9,6 +9,7 @@ use Filament\Forms;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
@@ -19,6 +20,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CommitteeResource extends Resource
 {
+
+    use Translatable;
+
     protected static ?string $model = Committee::class;
     protected static ?string $modelLabel = 'Organizing Committee';
     protected static ?string $navigationGroup = 'Front End Components';
@@ -71,6 +75,11 @@ class CommitteeResource extends Resource
         return [
             //
         ];
+    }
+
+    public static function getTranslatableLocales(): array
+    {
+        return ['en', 'id', 'ar'];
     }
 
     public static function getPages(): array

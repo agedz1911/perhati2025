@@ -8,12 +8,15 @@ use Filament\Resources\Pages\ListRecords;
 
 class ListCommittees extends ListRecords
 {
+    use ListRecords\Concerns\Translatable;
+    
     protected static string $resource = CommitteeResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
             Actions\CreateAction::make(),
+            Actions\LocaleSwitcher::make(),
         ];
     }
 }
