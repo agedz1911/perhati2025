@@ -38,3 +38,8 @@ Route::prefix('/submission')->group(function () {
 
 Route::get('/registration', Registration::class);
 
+Route::get('locale/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('locale');
