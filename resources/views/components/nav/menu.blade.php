@@ -50,15 +50,15 @@
                 </a>
                 <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#at-glance">{{__('menu.atglance')}}</a>
+                    <a href="javascript:void(0)">{{__('menu.atglance')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#schedule">{{__('menu.schedule')}}</a>
+                    <a href="javascript:void(0)">{{__('menu.schedule')}}</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item {{ request()->is('registration*') ? 'text-perhati-500' : '' }}">
-                <a href="/registration" class="nav-link-item">{{__('menu.registration')}}
+                <a href="javascript:void(0)" class="nav-link-item">{{__('menu.registration')}}
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
@@ -68,10 +68,10 @@
                 </a>
                 <ul class="sub-menu" id="submenu-11">
                   <li class="sub-menu--item">
-                    <a href="/submission#guideline-abstract">{{__('menu.guide-abstract')}}</a>
+                    <a href="javascript:void(0)">{{__('menu.guide-abstract')}}</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/submission#submission">{{__('menu.abstract')}}</a>
+                    <a href="javascript:void(0)">{{__('menu.abstract')}}</a>
                   </li>
                 </ul>
               </li>
