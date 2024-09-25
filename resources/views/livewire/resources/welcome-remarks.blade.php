@@ -18,14 +18,12 @@
                                     </div>
                                 </div>
                             @else
-                               
-                                    <div class="h-96">
-                                        <div class=" rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
-                                            <img src="{{ asset('storage/' . $message->image) }}" class="object-cover rounded-lg"
-                                                alt="{{ $message->name }}" />
-                                        </div>
+                                <div class="h-96">
+                                    <div class=" rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
+                                        <img src="{{ asset('storage/' . $message->image) }}"
+                                            class="object-cover rounded-lg" alt="{{ $message->name }}" />
                                     </div>
-                                
+                                </div>
                             @endif
                         </figure>
                         <div class="card-body">
