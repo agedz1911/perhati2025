@@ -103,7 +103,7 @@
                 <div class="pt-20 pb-10 justify-center flex md:items-center lg:items-start flex-col lg:flex-row gap-5">
                     @foreach ($messages as $message)
                         <div class="flex items-start flex-row gap-3">
-                            @if ($message->getMedia('welcomeMessage')->isEmpty())
+                            @if ($message->image == null)
                                 <div class="">
                                     <div class="w-20 rounded-md">
                                         <img src="{{ asset('images/speakers.jpg') }}" alt="Default Doctor Image"
@@ -111,14 +111,14 @@
                                     </div>
                                 </div>
                             @else
-                                @foreach ($message->getMedia('welcomeMessage') as $image)
+                                
                                     <div class="">
                                         <div class="w-20 rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
-                                            <img src="{{ $image->getUrl() }}" class="object-cover w-20 rounded-lg"
+                                            <img src="{{ asset('storage/' . $message->image) }}" class="object-cover w-20 rounded-lg"
                                                 alt="{{ $message->name }}" />
                                         </div>
                                     </div>
-                                @endforeach
+                               
                             @endif
                             <div class="card bg-base-100 w-full lg:w-96 shadow-xl">
                                 <div class="card-body ">
