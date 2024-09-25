@@ -6,6 +6,7 @@ use App\Filament\Resources\WelcomeMessageResource\Pages;
 use App\Filament\Resources\WelcomeMessageResource\RelationManagers;
 use App\Models\WelcomeMessage;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
@@ -20,6 +21,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Resources\Concerns\Translatable;
+use Filament\Tables\Columns\ImageColumn;
 
 class WelcomeMessageResource extends Resource
 {
@@ -37,8 +39,8 @@ class WelcomeMessageResource extends Resource
                 TextInput::make('title')->required(),
                 TextInput::make('no_urut')->numeric(),
                 Toggle::make('is_active'),
-                SpatieMediaLibraryFileUpload::make('image')
-                    ->collection('welcomeMessage'),
+                FileUpload::make('image')
+                    ->directory('welcomeMessage'),
                 MarkdownEditor::make('description')
             ]);
     }
@@ -49,8 +51,7 @@ class WelcomeMessageResource extends Resource
             ->columns([
                 TextColumn::make('name')->limit(20),
                 TextColumn::make('title')->limit(20),
-                SpatieMediaLibraryImageColumn::make('image')
-                    ->collection('welcomeMessage'),
+                ImageColumn::make('image'),
                 TextColumn::make('description')->markdown()->limit(250),
                 IconColumn::make('is_active')->boolean()
             ])
