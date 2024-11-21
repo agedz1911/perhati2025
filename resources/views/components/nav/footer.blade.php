@@ -33,8 +33,8 @@
                 <div class="grid grid-flow-col gap-2">
                     <a href="" data-tip="@gmail.com" class="btn btn-outline hover:bg-primary btn-md tooltip tooltip-bottom py-2 btn-ghost btn-square"><i class="fa-brands fa-youtube text-red-600 text-lg"></i></a>
                     <a href="" data-tip="@ig" class="btn btn-outline hover:bg-primary btn-md tooltip tooltip-bottom py-2 btn-ghost btn-square"><i class="fa-brands fa-instagram text-rose-500 text-lg"></i></a>
-                    <a class="btn btn-outline hover:bg-primary btn-md  py-2 btn-ghost btn-square"><i class="fa-solid fa-envelope text-white text-lg"></i></a>
-                    <a class="btn btn-outline hover:bg-primary btn-md   py-2 btn-ghost btn-square"><i class="fa-brands fa-whatsapp text-lg text-green-500"></i></a>
+                    <a href="mailto:konasperhatikl2025@pharma-pro.com" data-tip="konasperhatikl2025@pharma-pro.com" class="tooltip tooltip-bottom btn btn-outline hover:bg-primary btn-md  py-2 btn-ghost btn-square"><i class="fa-solid fa-envelope text-white text-lg"></i></a>
+                    <a href="https://wa.me/+6282277832431" target="_blank" data-tip="+62 822-7783-2431" class="btn btn-outline hover:bg-primary btn-md tooltip tooltip-bottom  py-2 btn-ghost btn-square"><i class="fa-brands fa-whatsapp text-lg text-green-500"></i></a>
                 </div>
             </nav>
         </div>
