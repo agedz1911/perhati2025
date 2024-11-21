@@ -13,8 +13,8 @@
                     <p class="text-biscay-900">{{ __('home.venue')}} <br>
                         {{ __('home.event_date')}}}</p>
                     <div class="flex flex-row gap-5">
-                        <button class="btn btn-info text-white">{{__('home.register')}}</button>
-                        <button class="btn btn-outline hover:bg-info">{{__('home.read_more')}}</button>
+                        <a href="/registration" class="btn btn-info text-white">{{__('home.register')}}</a>
+                        <a href="/congress-information" class="btn btn-outline hover:bg-info">{{__('home.read_more')}}</a>
                     </div>
                 </div>
             </div>
@@ -83,8 +83,8 @@
                 </div>
 
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</button>
-                    <button class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</button>
+                    <a href="/registration" class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</a>
+                    <a href="/congress-information" class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</a>
                 </div>
 
             </div>

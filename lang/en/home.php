@@ -15,4 +15,10 @@ return [
     'counter_minute' => 'Minutes',
     'counter_second' => 'Seconds',
     'get_contact_us' => 'Contact us for the latest news and info.',
+    'reg_category' => 'Category',
+    'early_bird' => 'Early Bird Registration',
+    'reg_late_onsite' => 'Late / Onsite Registration',
+    'reg_specialist' => 'Specialist',
+    'reg_resident_gp' => 'Resident / GP',
+    'reg_up_to' => 'Up to',
 ];
