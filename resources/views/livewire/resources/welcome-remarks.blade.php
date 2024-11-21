@@ -39,6 +39,23 @@
                 <div class="flex flex-col items-center lg:pb-10 justify-start">
                     <div class="card card-compact glass w-96 shadow-xl relative">
                         <figure>
+                            @if ($message->image == null)
+                                <div class="h-96">
+                                    <div class="bg-gradient-to-b from-perhati-500 to-perhati-200 rounded-md">
+                                        <img src="{{ asset('images/speakers.jpg') }}" alt="Default Doctor Image"
+                                            class="object-cover rounded-lg " />
+                                    </div>
+                                </div>
+                            @else
+                                <div class="h-96">
+                                    <div class=" rounded-md bg-gradient-to-b from-perhati-500 to-perhati-200">
+                                        <img src="{{ asset('storage/' . $message->image) }}"
+                                            class="object-cover rounded-lg" alt="{{ $message->name }}" />
+                                    </div>
+                                </div>
+                            @endif
+                        </figure>
+                        {{-- <figure>
                             @if ($message->getMedia('welcomeMessage')->isEmpty())
                                 <div class="h-96">
                                     <div class="bg-gradient-to-b from-perhati-500 to-perhati-200 rounded-md">
@@ -56,7 +73,7 @@
                                     </div>
                                 @endforeach
                             @endif
-                        </figure>
+                        </figure> --}}
                         <div class="card-body">
                             <h2 class="card-title text-primary">
                                 {{ $message->name }}
