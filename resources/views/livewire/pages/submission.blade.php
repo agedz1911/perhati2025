@@ -18,7 +18,7 @@
                         </span>
                     </summary>
                     <p class="mt-4 leading-relaxed text-slate-500 list-disc px-10">
-                        {{ $guide->description }}
+                        {!! $guide->description !!}
                     </p>
                     
                 </details>
