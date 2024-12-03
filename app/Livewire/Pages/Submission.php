@@ -12,7 +12,7 @@ class Submission extends Component
 {
     public function render()
     {
-        $guidelines = GuidelineAbstract::orderBy('no_urut', 'asc', 'asc')->get();
+        $guidelines = GuidelineAbstract::get();
         return view('livewire.pages.submission', ['guidelines' => $guidelines]);
     }
 }
