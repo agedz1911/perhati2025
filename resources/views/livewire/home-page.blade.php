@@ -87,7 +87,7 @@
                     <a href="/registration" class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</a>
                     <a href="/congress-information" class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</a>
                 </div>
-                <img src="images/mascoot.png" class="w-44 float-end" alt="">
+                <img src="images/mascoot.png" class="w-36 float-end" alt="">
             </div>
         </div>
     </div>
