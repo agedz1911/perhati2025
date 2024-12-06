@@ -6,7 +6,7 @@
                 <h1 class="text-4xl mt-5 text-primary-800 mb-5 font-bold">{{__('home.title')}} PERHATI-KL</h1>
                 <div class="mt-5">
                     <div class="font-semibold mt-5 text-slate-500">
-                        <p class="text-biscay-900">{{__('home.venue')}}<br>
+                        <p class="text-biscay-900">{{ __('home.hotel')}}, {{__('home.venue')}}<br>
                             {{__('home.event_date')}}</p>
                     </div>
                 </div>

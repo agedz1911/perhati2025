@@ -10,8 +10,8 @@
                     <h1 class="text-4xl font-semibold">{{ __('home.title')}} PERHATI-KL
                     </h1>
 
-                    <p class="text-biscay-900">{{ __('home.venue')}} <br>
-                        {{ __('home.event_date')}}}</p>
+                    <p class="text-biscay-900">{{ __('home.hotel')}}, {{ __('home.venue')}} <br>
+                        {{ __('home.event_date')}}</p>
                     <div class="flex flex-row gap-5">
                         <a href="/registration" class="btn btn-info text-white">{{__('home.register')}}</a>
                         <a href="/congress-information" class="btn btn-outline hover:bg-info">{{__('home.read_more')}}</a>
@@ -72,13 +72,14 @@
                 </div>
             </div>
             <div class="w-full px-0 lg:pl-10 lg:py-5">
+                
                 <h1 class="text-4xl mt-5 text-info font-bold">{{__('home.title')}} </h1>
                 <h1 class="text-xl mt-5 text-info font-bold">{{__('home.association')}}</h1>
                 {{-- <p class="text-slate-400 italic mt-5">"Theme: Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit "
                 </p> --}}
                 <div class="font-semibold mt-5 text-slate-500">
-                    <p>{{__('home.venue')}} </p>
+                    <p>{{ __('home.hotel')}}, {{__('home.venue')}} </p>
                     <p>{{__('home.event_date')}}</p>
                 </div>
 
@@ -86,7 +87,7 @@
                     <a href="/registration" class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</a>
                     <a href="/congress-information" class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</a>
                 </div>
-
+                <img src="images/mascoot.png" class="w-44 float-end" alt="">
             </div>
         </div>
     </div>

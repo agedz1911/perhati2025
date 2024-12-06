@@ -13,6 +13,4 @@ return [
     'submission' => 'Submission',
     'guide-abstract' => 'Guideline for Abstract',
     'abstract' => 'Abstract Submission',
-    'registration_fee' => 'Registration Fee',
-    'registration_info' => 'Registration Information',
 ];
