@@ -3,7 +3,7 @@
 return [
     'title' => 'Kongres Nasional ke-XX',
     'association' => 'Perhimpunan Dokter Spesialis THT Bedah Kepala dan Leher Indonesia',
-    'venue' => 'Lombok, Nusa Tenggara Barat, Indonesia',
+    'venue' => 'Nusa Tenggara Barat, Indonesia',
     'register' => 'Daftar Sekarang',
     'read_more' => 'Baca Selengkapnya',
     'get_contact' => 'Hubungi kami',

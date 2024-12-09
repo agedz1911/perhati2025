@@ -3,7 +3,7 @@
 return [
     'title' => 'The XX National Congress of',
     'association' => 'the Association of Indonesian Head and Neck Surgery ENT Specialists ',
-    'venue' => 'Lombok, West Nusa Tenggara, Indonesia ',
+    'venue' => 'West Nusa Tenggara, Indonesia',
     'date' => 'Oktober, 29th - November, 1st 2025',
     'register' => 'Register Now',
     'read_more' => 'Read More',
