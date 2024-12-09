@@ -28,8 +28,8 @@
 
     <div class="pt-28 pb-52 lg:px-20 px-5 bg-slate-200" id="submission">
         <div class="flex-col flex gap-3 mb-10">
-            <h4 class="text-2xl text-primary-600 font-semibold">Submission</h4>
-            <h1 class="text-4xl text-primary-700 font-semibold">Abstract Submission</h1>
+            <h4 class="text-2xl text-primary font-semibold">{{ __('menu.submission') }}</h4>
+            <h1 class="text-4xl text-primary font-semibold">{{__('menu.abstract')}}</h1>
         </div>
 
         <div>
