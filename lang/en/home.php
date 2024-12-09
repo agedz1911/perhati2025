@@ -21,4 +21,5 @@ return [
     'reg_specialist' => 'Specialist',
     'reg_resident_gp' => 'Resident / GP',
     'reg_up_to' => 'Up to',
+    'hotel' => 'Lombok Raya Hotel',
 ];
