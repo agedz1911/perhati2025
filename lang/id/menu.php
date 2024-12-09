@@ -13,4 +13,6 @@ return [
     'submission' => 'Penyerahan',
     'guide-abstract' => 'Pedoman Abstrak',
     'abstract' => 'Penyerahan Abstrak',
+    'registration_fee' => 'Biaya pendaftaran',
+    'registration_info' => 'Informasi Pendaftaran',
 ];
