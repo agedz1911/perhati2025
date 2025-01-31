@@ -15,4 +15,5 @@ return [
     'abstract' => 'Penyerahan Abstrak',
     'registration_fee' => 'Biaya pendaftaran',
     'registration_info' => 'Informasi Pendaftaran',
+    'event_theme' => 'Penguatan Organisasi dan Inovasi Teknologi untuk Transformasi PERHATI-KL',
 ];

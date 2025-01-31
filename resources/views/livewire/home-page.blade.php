@@ -9,8 +9,8 @@
                 <div class="flex flex-col gap-4 mt-5">
                     <h1 class="text-4xl font-semibold">{{ __('home.title')}} PERHATI-KL
                     </h1>
-
-                    <p class="text-biscay-900">{{ __('home.hotel')}}, {{ __('home.venue')}} <br>
+                    <h4 class="italic text-xl font-semibold text-gray-700">" {{ __('home.theme')}} "</h4>
+                    <p class="text-stone-800">{{ __('home.hotel')}}, {{ __('home.venue')}} <br>
                         {{ __('home.event_date')}}</p>
                     <div class="flex flex-row gap-5">
                         <a href="/registration" class="btn btn-info text-white">{{__('home.register')}}</a>
@@ -75,9 +75,8 @@
                 
                 <h1 class="text-4xl mt-5 text-info font-bold">{{__('home.title')}} </h1>
                 <h1 class="text-xl mt-5 text-info font-bold">{{__('home.association')}}</h1>
-                {{-- <p class="text-slate-400 italic mt-5">"Theme: Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit "
-                </p> --}}
+                <p class="text-slate-600 font-semibold italic mt-5">"{{__('home.theme')}}"
+                </p>
                 <div class="font-semibold mt-5 text-slate-500">
                     <p>{{ __('home.hotel')}}, {{__('home.venue')}} </p>
                     <p>{{__('home.event_date')}}</p>

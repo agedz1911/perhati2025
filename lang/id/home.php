@@ -21,4 +21,13 @@ return [
     'reg_resident_gp' => 'Residen / Dokter umum',
     'reg_up_to' => 'Hingga',
     'hotel' => 'Hotel Lombok Raya',
+    'theme' => 'Penguatan Organisasi dan Inovasi Teknologi untuk Transformasi PERHATI-KL',
+    'regular_reg' => 'Pendaftaran Reguler',
+    'reg_start_from' => 'Mulai dari',
+    'reg_specialist_early' => 'IDR 4.000.000',
+    'reg_specialist_regular' => 'IDR 4.500.000',
+    'reg_specialist_late' => 'IDR 5.000.000',
+    'reg_resident_early' => 'IDR 2.500.000',
+    'reg_resident_regular' => 'IDR 3.000.000',
+    'reg_resident_late' => 'IDR 3.500.000',
 ];

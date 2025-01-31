@@ -13,7 +13,8 @@
                             <tr class="">
                                 <th class="text-start" style="width: 32%;">{{__('home.reg_category')}}</th>
                                 <th>{{__('home.early_bird')}} <br> {{__('home.reg_up_to')}} June 24<sup>th</sup>, 2025</th>
-                                <th>{{__('home.reg_late_onsite')}}</th>
+                                <th>{{__('home.regular_reg')}} <br> {{__('home.reg_up_to')}} August 29<sup>th</sup>, 2025</th>
+                                <th>{{__('home.reg_late_onsite')}} <br> {{__('home.reg_start_from')}} August 30<sup>th</sup>, 2025</th>
                                 
                             </tr>
                         </thead>
@@ -21,14 +22,16 @@
                             <!-- row 1 -->
                             <tr>
                                 <th class="text-start">{{__('home.reg_specialist')}} </th>
-                                <td>Rp. 4.000.000</td>
-                                <td>Rp. 4.500.000</td>
+                                <td>{{__('home.reg_specialist_early')}}</td>
+                                <td>{{__('home.reg_specialist_regular')}}</td>
+                                <td>{{__('home.reg_specialist_late')}}</td>
                                 
                             </tr>
                             <tr>
                                 <th class="text-start">{{__('home.reg_resident_gp')}} </th>
-                                <td>Rp. 2.500.000</td>
-                                <td>Rp. 3.000.000</td>
+                                <td>{{__('home.reg_resident_early')}}</td>
+                                <td>{{__('home.reg_resident_regular')}}</td>
+                                <td>{{__('home.reg_resident_late')}}</td>
                                 
                             </tr>
                             
