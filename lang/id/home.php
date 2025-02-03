@@ -30,4 +30,5 @@ return [
     'reg_resident_early' => 'IDR 2.500.000',
     'reg_resident_regular' => 'IDR 3.000.000',
     'reg_resident_late' => 'IDR 3.500.000',
+    'info_accommodation' => 'Penyelenggara Konas XX PERHATI-KL telah mendapatkan tarif kompetitif di berbagai hotel di dekat Lombok Raya Hotel (tempat) untuk mengakomodasi delegasi dengan anggaran dan preferensi yang berbeda. Pemesanan hotel akan dibuka dan dapat ketersediaan. Disarankan untuk memesan hotel pilihan Anda sesegera mungkin',
 ];

@@ -16,4 +16,8 @@ return [
     'registration_fee' => 'Biaya pendaftaran',
     'registration_info' => 'Informasi Pendaftaran',
     'event_theme' => 'Penguatan Organisasi dan Inovasi Teknologi untuk Transformasi PERHATI-KL',
+    'accommodation' => 'Akomodasi',
+    'hotel_resv' => 'Reservasi hotel',
+    'room_type' => 'Jenis kamar',
+    'book_now' => 'Pesan sekarang',
 ];

@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\ScientificProgram;
@@ -37,6 +38,7 @@ Route::prefix('/submission')->group(function () {
 });
 
 Route::get('/registration', Registration::class);
+Route::get('/accommodation', Accommodation::class);
 
 Route::get('locale/{locale}', function ($locale) {
     app()->setLocale($locale);

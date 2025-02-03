@@ -32,4 +32,5 @@ return [
     'reg_resident_early' => 'USD 154',
     'reg_resident_regular' => 'USD 185',
     'reg_resident_late' => 'USD 216',
+    'info_accommodation' => 'The organizers of KONAS XX PERHATI-KL have secured competitive rates at a variety of hotels near the Lombok Raya Hotel (venue) to accommodate delegates with different budgets and preferences. Hotel reservations will open and are subject to availability. It is advisable to book your preferred hotel as soon as possible',
 ];

@@ -75,6 +75,11 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item {{ request()->is('accommodation*') ? 'text-perhati-500' : '' }}">
+                <a href="/accommodation" class="nav-link-item">{{__('menu.accommodation')}}
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
 
 
             </ul>

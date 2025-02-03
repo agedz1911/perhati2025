@@ -15,4 +15,8 @@ return [
     'abstract' => 'Abstract Submission',
     'registration_fee' => 'Registration Fee',
     'registration_info' => 'Registration Information',
+    'accommodation' => 'Accommodation',
+    'hotel_resv' => 'Hotel Reservation',
+    'room_type' => 'Room Type',
+    'book_now' => 'Book Now',
 ];
