@@ -26,10 +26,10 @@
                 <p class="mt-2 mb-3 text-xs text-gray-500"><i class="fa-solid text-accent fa-circle-info"></i>
                     {{$accommodation->distance}}</p>
                 <p class="mb-0 font-semibold text-info">{{ __('menu.room_type') }}</p>
-                <div class="flex flex-col lg:flex-row justify-evenly gap-2 w-full text-sm mb-3 border">
+                <div class="flex flex-col lg:flex-row justify-evenly gap-2 w-full text-sm mb-3">
                         {!! str($accommodation->price)->markdown()->sanitizeHtml() !!}
                 </div>
-                <div class="card-actions w-full border">
+                <div class="card-actions w-full">
                     <a href="{{$accommodation->url}}" class="btn btn-primary btn-block">{{ __('menu.book_now') }} <i
                             class="fa-solid fa-angles-right"></i></a href="{{$accommodation->url}}">
                 </div>
