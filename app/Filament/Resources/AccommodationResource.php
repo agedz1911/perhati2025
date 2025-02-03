@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\AccommodationResource\Pages;
 use App\Filament\Resources\AccommodationResource\RelationManagers;
-use App\Models\Accommodation;
+use App\Models\accommodation;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
