@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Pages;
 
-use App\Models\Accommodation as ModelsAccommodation;
+use App\Models\accommodation as ModelsAccommodation;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
