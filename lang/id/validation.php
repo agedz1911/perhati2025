@@ -23,7 +23,7 @@ return [
     'can' => 'Bidang :attribute berisi nilai yang tidak sah.',
     'confirmed' => 'Konfirmasi kolom :attribute tidak cocok.',
     'current_password' => 'Kata sandinya salah.',
-    'date' => '29 Oktober - 1 November 2025',
+    'date' => 'Bidang :attribute harus berupa tanggal yang valid.',
     'date_equals' => 'Bidang :attribute harus berisi tanggal yang sama dengan :date.',
     'date_format' => 'Bidang :attribute harus cocok dengan format :format.',
     'decimal' => 'Bidang :attribute harus memiliki :decimal tempat desimal.',

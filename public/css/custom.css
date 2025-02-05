@@ -366,14 +366,14 @@
 
 @media (min-width: 992px) {
     .site-menu-main {
-        column-gap: 30px;
+        column-gap: 10px;
         flex-direction: row;
     }
 }
 
 @media (width > 1200px) {
     .site-menu-main {
-        column-gap: 50px;
+        column-gap: 25px;
     }
 }
 

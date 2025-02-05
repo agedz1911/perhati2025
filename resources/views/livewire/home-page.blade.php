@@ -11,7 +11,8 @@
                     </h1>
                     <h4 class="italic text-xl font-semibold text-gray-700">" {{ __('home.theme')}} "</h4>
                     <p class="text-stone-800">{{ __('home.hotel')}}, {{ __('home.venue')}} <br>
-                        {{ __('home.event_date')}}</p>
+                        {{ __('home.event_date')}}
+                    </p>
                     <div class="flex flex-row gap-5">
                         <a href="/registration" class="btn btn-info text-white">{{__('home.register')}}</a>
                         <a href="/congress-information"
@@ -148,9 +149,8 @@
 
     {{-- Start Counter --}}
     <div class="bg-scroll bg-counter relative lg:px-20 px-2 pt-14 pb-24">
-        <div class="flex justify-center">
+        <div class="flex flex-col lg:flex-row gap-2 justify-center">
             <div class="card bg-base-100 w-full max-w-4xl shadow-md">
-
                 <div class="card-body">
                     <h2 class="card-title mb-5">{{ __('home.tgl_penting')}}</h2>
                     <div class="overflow-x-auto">
@@ -196,17 +196,26 @@
                                     <th class=" w-1/2">{{ __('home.tgl_penting_acc')}}</th>
                                     <td class="bg-perhati-500 text-white">{{__('home.tgl_acc')}}</td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
                     </div>
-                    {{-- 
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                    </div> --}}
                 </div>
             </div>
+
+            <!-- <div class="mockup-window  relative border w-full">
+                <div class="absolute right-0 px-4 top-3">
+                    <p class="text-black font-semibold"><i class="fa-solid fa-circle-dot text-green-500"></i> PERHATI-KL
+                    </p>
+                </div>
+                <div class="bg-gray-50 flex justify-center px-4 py-16">
+                    <iframe class="w-full rounded-lg" width="560" height="400"
+                        src="https://www.youtube.com/embed/EEwjG5WVJ98?si=Bxh9cjaYtqfO64no" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div> -->
         </div>
     </div>
     {{-- End Counter --}}

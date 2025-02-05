@@ -80,8 +80,9 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-
-
+              <li class="nav-item">
+                <a href="javascript:void(0)" onclick="my_modal_4.showModal()" class="nav-link-item">{{__('menu.contact_us')}}</a>
+              </li>
             </ul>
           </nav>
         </div>
