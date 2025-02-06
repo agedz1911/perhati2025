@@ -11,8 +11,8 @@ class Accommodation extends Component
 {
     public function render()
     {
-        //$accommodations = ModelsAccommodation::where('is_active', 1)->get();
-        $accommodations = ModelsAccommodation::all();
+        $accommodations = ModelsAccommodation::where('is_active', true)->get();
+        // $accommodations = ModelsAccommodation::all();
         return view('livewire.pages.accommodation', ['accommodations' => $accommodations]);
     }
 }
