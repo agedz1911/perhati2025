@@ -52,4 +52,16 @@ return [
     'tgl_regular' => '4 Agustus 2025',
     'tgl_abstract' => '1 Agustus 2025',
     'tgl_acc' => '4 Agustus 2025',
+    'visit' => 'Mengunjungi',
+    'visit_venue' => 'Tempat acara',
+    'visit_address' => 'Alamat',
+    'visit_address_full' => 'Jl. Panca Usaha No.11, Cilinaya, Kec. Cakranegara, Kota Mataram, Nusa Tenggara Barat, Indonesia',
+    'visit_direction' => 'Dapatkan Arah',
+    'welcome' => 'Selamat Datang di',
+    'lombok' => 'Pulau Lombok adalah sebuah pulau di kelompok Kepulauan Nusa Tenggara yang dipisahkan oleh Selat Lombok dari Bali ke barat dan Selat sayang di timur dari Sumbawa.
+Penduduk asli di Pulau Lombok adalah suku Sasak yang merupakan kelompok etnis mayoritas. Tidak dapat disangkal bahwa popularitas pulau Lombok berasal dari pesonanya. Alam, budaya, dan tradisi meleleh menjadi satu yang menawarkan pengalaman unik bagi mereka yang sedang berlibur. Pengalaman ini pada akhirnya meninggalkan kesan di benak wisatawan dan mempromosikannya kepada orang yang mereka cintai. 
+
+Salah satu hal unik tentang pulau Lombok berasal dari keragamannya. Anda perlu memahami bahwa Pulau Lombok adalah pulau terbesar di Kepulauan Provinsi Nusa Tenggara Barat. Dengan menjadi yang terbesar, pulau Lombok telah menjadi pusat keragaman di wilayah tersebut.',
+    'lombok_cultural' => 'Hiburan & Budaya',
+    'lombok_culinary' => 'Kenikmatan Kuliner',
 ];

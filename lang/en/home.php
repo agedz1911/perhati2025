@@ -54,4 +54,16 @@ return [
     'tgl_regular' => 'August 4th, 2025',
     'tgl_abstract' => 'August 1st, 2025',
     'tgl_acc' => 'August 4th, 2025',
+    'visit' => 'Visiting',
+    'visit_venue' => 'Event Venue',
+    'visit_address' => 'Address',
+    'visit_address_full' => 'Panca Usaha Street No.11, Cilinaya, Kec. Cakranegara, Mataram City, West Nusa Tenggara, Indonesia',
+    'visit_direction' => 'Get Direction',
+    'welcome' => 'Welcome to',
+    'lombok' => 'Lombok Island is an island in the Nusa Tenggara Islands group which is separated by the Lombok Strait from Bali to the west and the Alas Strait to the east from Sumbawa.
+The native population on Lombok Island is the Sasak tribe which is the majority ethnic group. It cannot be denied that the popularity of the island of Lombok comes from its charm. Nature, culture and tradition melt into one offering a unique experience for those on holiday. This experience ultimately leaves an impression on the minds of tourists and promotes it to their loved ones. 
+
+One of the unique things about the island of Lombok comes from its diversity. You need to understand that Lombok Island is the largest island in the archipelago of West Nusa Tenggara province. By being the largest, the island of Lombok has become the center of diversity in the region.',
+    'lombok_cultural' => 'Entertainment & Cultural Landmark',
+    'lombok_culinary' => 'Culinary Delight',
 ];

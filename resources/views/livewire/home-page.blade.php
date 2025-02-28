@@ -203,50 +203,65 @@
                 </div>
             </div>
 
-            <div class="mockup-window  relative border w-full">
+            <div class="mockup-window  bg-slate-200 relative border w-full">
                 <div class="absolute right-0 px-4 top-3">
                     <p class="text-black font-semibold"><i class="fa-solid fa-circle-dot text-green-500"></i> PERHATI-KL
                     </p>
                 </div>
                 <div class="bg-gray-50 flex justify-center px-4 py-16">
-                    <iframe class="w-full rounded-lg" width="560" height="400" src="https://www.youtube.com/embed/ahK1_sWsGlA?si=0EMqYQYtm0C6FSKn"
-                        title="YouTube video player" frameborder="0"
+                    <iframe class="w-full rounded-lg" width="560" height="400"
+                        src="https://www.youtube.com/embed/ahK1_sWsGlA?si=0EMqYQYtm0C6FSKn" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
+
                 </div>
             </div>
         </div>
     </div>
     {{-- End Counter --}}
     {{-- Start Map --}}
-    {{-- <div class="bg-local pt-40 pb-52 lg:px-20 px-5 bg-blog">
-        <div class="w-full mb-10">
-            <iframe class="w-full rounded-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5968203715424!2d106.7951294746461!3d-6.184677660597026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f68da8842883%3A0x1b255ae63d716ca0!2sPusat%20Jantung%20Nasional%20Harapan%20Kita!5e0!3m2!1sid!2sid!4v1718088658161!5m2!1sid!2sid"
-                class="w-100" width="600" height="315" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="flex items-center justify-between mb-10 px-5 lg:px-20 mt-12">
+        <div class="badge badge-primary p-8">
+            <h1 class="text-2xl text-white font-semibold">{{__('home.visit')}}</h1>
         </div>
-        <div class="card w-full bg-primary-600 text-primary-content pt-5 pb-5">
-            <div class="card-body">
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-regular fa-envelope text-6xl text-white"></i>
-                        <h2 class="card-title text-xl md:text-4xl text-white">Subscribe for
-                            the Latest Updates</h2>
-                    </div>
-                    <form class="flex flex-col lg:flex-row gap-4 lg:w-1/2 w-full">
+        <i class="fa-solid text-primary fa-location-dot text-5xl"></i>
+    </div>
 
-                        <input type="text" placeholder="Enter Your Email"
-                            class="input input-bordered input-lg rounded-lg lg:w-2/3 w-full" />
-                        <button
-                            class="btn btn-outline-success text-primary-600  border-none hover:text-slate-100 btn-lg w-full lg:w-1/3 ">Submit</button>
-                    </form>
+    <div class="flex flex-col lg:flex-row gap-4 px-5 lg:px-20">
+        <div class="lg:w-5/12 w-full">
+            <div class="card w-full bg-primary text-primary pt-5 pb-5">
+                <div class="card-body text-white">
+                    <div class="flex flex-col mb-4">
+                        <h4 class="title text-2xl font-bold">{{__('home.visit_venue')}}:</h4>
+                        <p>{{ __('home.hotel')}} {{ __('home.venue')}}</p>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h4 class="title text-2xl font-bold mb-0">{{__('home.visit_address')}}</h4>
+                        <p class="mt-0">{{__('home.visit_address_full')}}</p>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <p class="hover:underline hover:text-amber-300 hover:cursor-pointer">{{__('home.visit_direction')}}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> --}}
+        <div class="lg:w-7/12 w-full mb-10">
+            <iframe class="w-full rounded-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.063525794491!2d116.11609457486998!3d-8.589891087201694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdbf5945f01bed%3A0xcfe52a9fac79d466!2sLombok%20Raya%20Hotel!5e0!3m2!1sid!2sid!4v1740711344052!5m2!1sid!2sid"
+                width="600" height="330" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        </div>
+    </div>
+    <div class="px-5 lg:px-20 pb-20 pt-10">
+        <div class="flex flex-col md:flex-row gap-4 justify-between">
+            <img src="images/lombok/sade.jpg" class="w-full max-w-md rounded-lg object-cover shadow" alt="">
+            <img src="images/lombok/rinjani.jpg" class="w-full max-w-md object-cover rounded-lg shadow" alt="">
+            <img src="images/lombok/lombok-raya.jpg" class="w-full max-w-md object-cover rounded-lg shadow" alt="">
+        </div>
+        <a href="/visiting" class="float-end mt-5 hover:text-amber-500">{{__('home.read_more')}} ... <i class="fa-solid fa-angle-right"></i> </a>
+    </div>
     {{-- End Map --}}
 </div>
 

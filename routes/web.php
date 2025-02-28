@@ -6,6 +6,7 @@ use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\ScientificProgram;
 use App\Livewire\Pages\Submission;
+use App\Livewire\Pages\Visiting;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +36,11 @@ Route::prefix('/submission')->group(function () {
     Route::get('/', Submission::class);
     Route::get('/#guideline-abstract', Submission::class);
     Route::get('/#submission', Submission::class);
+});
+
+Route::prefix('/visiting')->group(function () {
+    Route::get('/', Visiting::class);
+    Route::get('/#lombok', Visiting::class);
 });
 
 Route::get('/registration', Registration::class);
