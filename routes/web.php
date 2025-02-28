@@ -41,6 +41,7 @@ Route::prefix('/submission')->group(function () {
 Route::prefix('/visiting')->group(function () {
     Route::get('/', Visiting::class);
     Route::get('/#lombok', Visiting::class);
+    Route::get('/#venue', Visiting::class);
 });
 
 Route::get('/registration', Registration::class);

@@ -89,7 +89,7 @@
                     <a href="/visiting#lombok">Lombok</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="=javascript:void(0)">{{__('home.visit_venue')}}</a>
+                    <a href="javascript:void(0)">{{__('home.visit_venue')}}</a>
                   </li>
                 </ul>
               </li>
