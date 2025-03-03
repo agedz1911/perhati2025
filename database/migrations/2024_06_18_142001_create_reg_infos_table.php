@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('reg_infos', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('slug')->nullable();
-            $table->longText('description')->nullable();
+            $table->json('title')->nullable();
+            $table->json('slug')->nullable();
+            $table->json('description')->nullable();
+            $table->json('is_active')->nullable();
             $table->timestamps();
         });
     }
