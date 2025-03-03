@@ -13,7 +13,7 @@
             </summary>
 
             <p class="mt-4 leading-relaxed text-slate-500">
-                {{$regInfomation->description}}
+                {!! str($regInfomation->description)->markdown()->sanitizeHtml() !!}
             </p>
         </details>
         @endforeach

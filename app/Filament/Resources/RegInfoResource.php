@@ -39,8 +39,8 @@ class RegInfoResource extends Resource
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 TextInput::make('slug'),
-                Textarea::make('description')->rows(8),
-                // MarkdownEditor::make('description'),
+                // Textarea::make('description')->rows(8),
+                MarkdownEditor::make('description'),
                 Toggle::make('is_active')->default(true)->inline(true)
             ]);
     }
