@@ -66,4 +66,8 @@ The native population on Lombok Island is the Sasak tribe which is the majority 
 One of the unique things about the island of Lombok comes from its diversity. You need to understand that Lombok Island is the largest island in the archipelago of West Nusa Tenggara province. By being the largest, the island of Lombok has become the center of diversity in the region.',
     'lombok_cultural' => 'Entertainment & Cultural Landmark',
     'lombok_culinary' => 'Culinary Delight',
+    'visit_hotel_title' => 'This tropical paradise is called Lombok. Full of Surprises, Surrounded by Beautiful Beaches, Vast Savannas, Rising Mountains, and Unique Community Traditions. That\'s what makes Lombok an extraordinary tourist destination, both for explorers and families',
+    'visit_hotel_desc_2' => 'Lombok Raya Hotel is located in the center of Mataram city, the capital of West Nusa Tengggara Province. Just travel less than 45 minutes from Zainuddin Abdul Madjid International Airport and less than 25 minutes to the famous Senggigi beach',
+    'visit_hotel_desc_3' => 'Because it is located in the city center, it is very convenient for you to shop, as well as being close to various interesting cultural destinations, such as weaving centers and Balinese temples. Lombok Raya Hotel with a four star rating was built by combining comfort and beautiful natural elements. Spacious gardens enhance our 264 rooms, most of which come with private balconies',
+    'visit_hotel_desc_4' => 'Enjoy your time at the swimming pool or spa, taste a variety of Indonesian, continental and western specialties at our restaurant. For small to large events, from business meetings, social events, gatherings, to wedding parties, we provide adequate halls and space',
 ];

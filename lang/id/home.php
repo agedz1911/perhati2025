@@ -64,4 +64,8 @@ Penduduk asli di Pulau Lombok adalah suku Sasak yang merupakan kelompok etnis ma
 Salah satu hal unik tentang pulau Lombok berasal dari keragamannya. Anda perlu memahami bahwa Pulau Lombok adalah pulau terbesar di Kepulauan Provinsi Nusa Tenggara Barat. Dengan menjadi yang terbesar, pulau Lombok telah menjadi pusat keragaman di wilayah tersebut.',
     'lombok_cultural' => 'Hiburan & Budaya',
     'lombok_culinary' => 'Kenikmatan Kuliner',
+    'visit_hotel_title' => 'Surga Tropis Itu Bernama Lombok. Penuh Kejutan, Dikelilingi Pantai-Pantai Yang Indah, Sabana Yang Luas, Gunung Yang Menulang, Dan Tradisi Masyarakat Yang Unik. Itulah Yang Menjadikan Lombok Tujuan Wisata Yang Luar Biasa, Baik UNTUK Penjelajah Maupun Keluarga',
+    'visit_hotel_desc_2' => 'Lombok Raya Hotel terletak di pusat kota Mataram City, ibukota provinsi Nusa Tengggara Barat. Perjalanan saja kurang dari 45 menit dari Bandara Internasional Zainuddin Abdul Madjid dan kurang dari 25 menit ke pantai Senggigi yang terkenal',
+    'visit_hotel_desc_3' => 'Karena terletak di pusat kota, sangat nyaman bagi Anda untuk berbelanja, serta dekat dengan berbagai tujuan budaya yang menarik, seperti pusat tenun dan kuil -kuil Bali. Lombok Raya Hotel dengan peringkat bintang empat dibangun dengan menggabungkan kenyamanan dan elemen alami yang indah. Kebun yang luas meningkatkan 264 kamar kami, yang sebagian besar datang dengan balkon pribadi',
+    'visit_hotel_desc_4' => 'Nikmati waktu Anda di kolam renang atau spa, cicipi berbagai spesialisasi Indonesia, Kontinental, dan Barat di restoran kami. Untuk acara kecil hingga besar, dari pertemuan bisnis, acara sosial, pertemuan, hingga pesta pernikahan, kami menyediakan ruang dan ruang yang memadai',
 ];
