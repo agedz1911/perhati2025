@@ -69,4 +69,6 @@ Salah satu hal unik tentang pulau Lombok berasal dari keragamannya. Anda perlu m
     'visit_hotel_desc_3' => 'Karena terletak di pusat kota, sangat nyaman bagi Anda untuk berbelanja, serta dekat dengan berbagai tujuan budaya yang menarik, seperti pusat tenun dan kuil -kuil Bali. Lombok Raya Hotel dengan peringkat bintang empat dibangun dengan menggabungkan kenyamanan dan elemen alami yang indah. Kebun yang luas meningkatkan 264 kamar kami, yang sebagian besar datang dengan balkon pribadi',
     'visit_hotel_desc_4' => 'Nikmati waktu Anda di kolam renang atau spa, cicipi berbagai spesialisasi Indonesia, Kontinental, dan Barat di restoran kami. Untuk acara kecil hingga besar, dari pertemuan bisnis, acara sosial, pertemuan, hingga pesta pernikahan, kami menyediakan ruang dan ruang yang memadai',
     'sponsorship_detail' => 'Untuk informasi lebih lanjut dan sponsor, silakan hubungi Sekretariat.',
+    'sponsor_more' => 'Lihat Lebih Banyak Sponsor',
+    'sponsorship_btn' => 'Hubungi Kami untuk Sponsor',
 ];

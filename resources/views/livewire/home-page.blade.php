@@ -220,7 +220,28 @@
         </div>
     </div>
     {{-- End Counter --}}
+    <div class="mb-10 lg:mb-20 px-5 lg:px-20 mt-12 flex flex-col items-center">
+        <div class="badge badge-primary p-6 mb-5">
+            <h1 class="text-2xl text-white uppercase font-semibold">{{__('menu.sponsorlist')}}</h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5">
+            @foreach ($sponsors as $sponsor)
+            <div class="p-2 border-x text-center opacity-75 hover:opacity-100">
+                <a href="{{$sponsor->website ? $sponsor->website : 'javascript:void(0)'}}">
+                    {!! $sponsor->logo ? '<img src="' . asset('storage/' . $sponsor->logo) . '"
+                        class="w-full hover:scale-110 hover:ease-out" alt="' . $sponsor->company . '" />' : '<p
+                        class="text-center text-primary text-sm">' . $sponsor->company . '</p>' !!}
+                </a>
+            </div>
+            @endforeach
+        </div>
+        <div class="flex gap-5 mt-10 flex-wrap">
+            <a href="/sponsor#sponsorlist" class="btn btn-primary">{{__('home.sponsor_more')}}</a>
+            <a href="mailto:konasperhatikl2025@pharma-pro.com" class="btn">{{__('home.sponsorship_btn')}}</a>
+        </div>
+    </div>
     {{-- Start Map --}}
+    <div class="border-t-2 border-dashed "></div>
     <div class="flex items-center justify-between mb-10 px-5 lg:px-20 mt-12">
         <div class="badge badge-primary p-8">
             <h1 class="text-2xl text-white font-semibold">{{__('home.visit')}}</h1>
