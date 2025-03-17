@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Pages;
 
-use App\Models\sponsor as ModelsSponsor;
+use App\Models\Sponsor as ModelsSponsor;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
