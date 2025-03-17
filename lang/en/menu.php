@@ -22,4 +22,6 @@ return [
     'contact_us' => 'Contact Us',
     'secretariat' => 'Secretariat',
     'contact_ps' => 'Contact Person',
+    'sponsorship' => 'Sponsorship',
+    'sponsorlist' => 'Sponsor List',
 ];

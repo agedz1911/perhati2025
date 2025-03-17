@@ -5,6 +5,7 @@ use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\ScientificProgram;
+use App\Livewire\Pages\Sponsor;
 use App\Livewire\Pages\Submission;
 use App\Livewire\Pages\Visiting;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,14 @@ Route::prefix('/congress-information')->group(function () {
     Route::get('#organizing-committee', CongressInformation::class);
     Route::get('#faculties', CongressInformation::class);
 });
+
+Route::prefix('/sponsor')->group(function () {
+    Route::get('/', Sponsor::class);
+    Route::get('#sponsorship', Sponsor::class);
+    Route::get('#sponsorlist', Sponsor::class);
+});
+
+
 Route::prefix('/scientific-program')->group(function () {
     Route::get('/', ScientificProgram::class);
     Route::get('#at-glance', ScientificProgram::class);

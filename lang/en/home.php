@@ -70,4 +70,5 @@ One of the unique things about the island of Lombok comes from its diversity. Yo
     'visit_hotel_desc_2' => 'Lombok Raya Hotel is located in the center of Mataram city, the capital of West Nusa Tengggara Province. Just travel less than 45 minutes from Zainuddin Abdul Madjid International Airport and less than 25 minutes to the famous Senggigi beach',
     'visit_hotel_desc_3' => 'Because it is located in the city center, it is very convenient for you to shop, as well as being close to various interesting cultural destinations, such as weaving centers and Balinese temples. Lombok Raya Hotel with a four star rating was built by combining comfort and beautiful natural elements. Spacious gardens enhance our 264 rooms, most of which come with private balconies',
     'visit_hotel_desc_4' => 'Enjoy your time at the swimming pool or spa, taste a variety of Indonesian, continental and western specialties at our restaurant. For small to large events, from business meetings, social events, gatherings, to wedding parties, we provide adequate halls and space',
+    'sponsorship_detail' => 'For further information and sponsorships please contact the secretariat.',
 ];

@@ -23,4 +23,6 @@ return [
     'contact_us' => 'Hubungi kami',
     'secretariat' => 'Sekretariat',
     'contact_ps' => 'Kontak Person',
+    'sponsorship' => 'Sponsor',
+    'sponsorlist' => 'Daftar Sponsor',
 ];

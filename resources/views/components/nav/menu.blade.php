@@ -40,6 +40,12 @@
                   <li class="sub-menu--item">
                     <a href="/congress-information#faculties">{{__('menu.faculty')}}</a>
                   </li>
+                  <li class="sub-menu--item">
+                    <a href="/sponsor#sponsorship">{{__('menu.sponsorship')}}</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="/sponsor#sponsorlist">{{__('menu.sponsorlist')}}</a>
+                  </li>
                 </ul>
               </li>
 
