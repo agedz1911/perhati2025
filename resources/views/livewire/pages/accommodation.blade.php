@@ -24,10 +24,11 @@
                         @endfor
                 </div>
                 <p class="mt-2 mb-3 text-xs text-gray-500"><i class="fa-solid text-accent fa-circle-info"></i>
-                    {{$accommodation->distance}}</p>
+                    {{$accommodation->distance}}
+                </p>
                 <p class="mb-0 font-semibold text-info">{{ __('menu.room_type') }}</p>
                 <div class="flex flex-col lg:flex-row justify-evenly gap-2 w-full text-sm mb-3">
-                        {!! str($accommodation->price)->markdown()->sanitizeHtml() !!}
+                    {!! str($accommodation->price)->markdown()->sanitizeHtml() !!}
                 </div>
                 <div class="card-actions w-full">
                     <a href="{{$accommodation->url}}" class="btn btn-primary btn-block">{{ __('menu.book_now') }} <i
@@ -38,8 +39,15 @@
         @endforeach
     </div>
     @else
-    <div>
-        <p class="text-gray-500 text-2xl text-center font-semibold">No Data</p>
+    <div class="mt-5 px-0">
+        <p class="text-gray-500 text-2xl text-center font-semibold"></p>
     </div>
     @endif
+
+    <div>
+        <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/bf283687-2076-43f2-aa4b-d9ab0c0b57a3/product-list/87956"></div>
+        <noscript>Please enable javascript in your browser to book</noscript>
+    </div>
 </div>
+
+<script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=bf283687-2076-43f2-aa4b-d9ab0c0b57a3" async></script>
