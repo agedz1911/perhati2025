@@ -50,131 +50,23 @@
         </div>
         <div class="border-t-2 border-dashed mt-5">
             <h1 class="uppercase font-semibold text-lg">Workshop</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                @foreach ($registrations as $registrasi)
                 <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
                     <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_facial_plastic')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class=""></h2>
-                            <span class="text-lg">{{__('home.ws_sp_facial_plastic')}}</span>
+                        <span class="badge  bg-perhati-400 border-none text-white">{{$registrasi->category}}</span>
+                        <p class="font-semibold text-xl">{{$registrasi->title}}</p>
+                        <div class="flex justify-center gap-3 border-t-2 mt-4">
+                            {!! str($registrasi->price)->markdown()->sanitizeHtml() !!}
+                            
                         </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
+                        <div class="mt-6 flex flex-col gap-2 text-sm">
+                            {!! str($registrasi->description)->markdown()->sanitizeHtml() !!}
+                        </div>
                     </div>
                 </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_neurotology')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class="">{{__('home.reg_specialist')}}</h2>
-                            <span class="text-lg">{{__('home.ws_sp_neurotology')}}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <h2 class="">{{__('home.reg_resident_gp')}}</h2>
-                            <span class="text-lg">{{__('home.ws_sp_neurotology')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_laring_faring')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class="">{{__('home.reg_specialist')}}</h2>
-                            <span class="text-lg">{{__('home.ws_sp_laring_faring')}}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <h2 class="">{{__('home.reg_resident_gp')}}</h2>
-                            <span class="text-lg">{{__('home.ws_gp_laring_faring')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_rhinology')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class=""></h2>
-                            <span class="text-lg">{{__('home.ws_sp_rhinology')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_imuno_alergi')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class=""></h2>
-                            <span class="text-lg">{{__('home.ws_sp_imuno_alergi')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_oncology')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class=""></h2>
-                            <span class="text-lg">{{__('home.ws_sp_oncology')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_bronko')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class="">{{__('home.reg_specialist')}}</h2>
-                            <span class="text-lg">{{__('home.ws_sp_bronko')}}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <h2 class="">{{__('home.reg_resident_gp')}}</h2>
-                            <span class="text-lg">{{__('home.ws_gp_bronko')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card w-full bg-price bg-perhati-50 max-w-sm  shadow-sm">
-                    <div class="card-body">
-                        <p class="font-semibold text-xl">{{__('home.ws_otology')}}</p>
-                        <div class="flex justify-between border-t-2">
-                            <h2 class=""></h2>
-                            <span class="text-lg">{{__('home.ws_sp_otology')}}</span>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2 text-xs">
-                            <li>
-                                <span>{{__('home.tgl_ws')}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                @endforeach
+                
             </div>
             <div class="card-actions justify-end">
                 <a href="https://expo.virconex-id.com/registration/perhati2025" class="btn btn-primary"><i

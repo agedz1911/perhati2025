@@ -65,7 +65,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugin(
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en', 'id', 'ar'])
+                    ->defaultLocales(['en', 'id'])
             );
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Registration as ModelsRegistration;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -11,6 +12,7 @@ class Registration extends Component
 {
     public function render()
     {
-        return view('livewire.pages.registration');
+        $registrations = ModelsRegistration::all();
+        return view('livewire.pages.registration', ['registrations' => $registrations]);
     }
 }
