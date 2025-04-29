@@ -21,7 +21,8 @@ class Faculty extends Model implements HasMedia
         'linkedin',
         'twitter',
         'is_active',
-        'image'
+        'image',
+        'no_urut'
     ];
 
     public function schedule_faculty(): HasMany

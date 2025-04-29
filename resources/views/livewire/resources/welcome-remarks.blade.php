@@ -34,7 +34,6 @@
                         </div>
                     </div>
                 </div>
-                
             @else
                 <div class="flex flex-col items-center lg:pb-10 justify-start">
                     <div class="card card-compact glass w-96 shadow-xl relative">

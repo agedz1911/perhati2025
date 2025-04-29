@@ -79,7 +79,7 @@ class CommitteeResource extends Resource
 
     public static function getTranslatableLocales(): array
     {
-        return ['en', 'id', 'ar'];
+        return ['en', 'id'];
     }
 
     public static function getPages(): array

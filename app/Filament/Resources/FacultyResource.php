@@ -55,13 +55,16 @@ class FacultyResource extends Resource
                     ->suffix('.com'),
                 TextInput::make('twitter')->prefix('https://')
                     ->suffix('.com'),
-                Toggle::make('is_active')->required(),
                 Select::make('type_participants')
                     ->multiple()
                     ->required()
                     ->relationship('type_participants', 'name')
                     ->searchable()
-                    ->preload()
+                    ->preload(),
+                Toggle::make('is_active')->required()->inline()->default(true),
+                TextInput::make('no_urut')
+                    ->numeric()
+                    ->required()
             ]);
     }
 
