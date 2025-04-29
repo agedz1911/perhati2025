@@ -60,7 +60,7 @@
     {{-- Start About --}}
     <div class="pb-24 px-4 mb-5 container mx-auto items-center">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
-            <div class="mockup-window bg-gray-200 relative border w-full">
+            <div class="mockup-window bg-gray-200 relative border w-full lg:w-1/2">
                 <div class="absolute right-0 px-4 top-3">
                     <p class="text-black font-semibold"><i class="fa-solid fa-circle-dot text-green-500"></i> PERHATI-KL
                     </p>
@@ -73,8 +73,7 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="w-full px-0 lg:pl-10 lg:py-5">
-
+            <div class="w-full lg:w-1/2 px-0 lg:pl-10 lg:py-5">
                 <h1 class="text-4xl mt-5 text-info font-bold">{{__('home.title')}} </h1>
                 <h1 class="text-xl mt-5 text-info font-bold">{{__('home.association')}}</h1>
                 <p class="text-slate-600 font-semibold italic mt-5">"{{__('home.theme')}}"
@@ -89,8 +88,8 @@
                         class="btn w-1/3 btn-primary border-none text-white">{{__('home.register')}}</a>
                     <a href="/congress-information" class="btn w-1/3 btn-outline-primary ">{{__('home.read_more')}}</a>
                 </div>
-                <img src="images/mascoot.png" class="w-36 float-end" alt="">
             </div>
+            <livewire:resources.flayer />
         </div>
     </div>
     {{-- End About --}}
@@ -262,7 +261,8 @@
                         <p class="mt-0">{{__('home.visit_address_full')}}</p>
                     </div>
                     <div class="flex flex-col mb-4">
-                        <p class="hover:underline hover:text-amber-300 hover:cursor-pointer">{{__('home.visit_direction')}}</p>
+                        <p class="hover:underline hover:text-amber-300 hover:cursor-pointer">
+                            {{__('home.visit_direction')}}</p>
                     </div>
                 </div>
             </div>
@@ -281,7 +281,8 @@
             <img src="images/lombok/rinjani.jpg" class="w-full max-w-md object-cover rounded-lg shadow" alt="">
             <img src="images/lombok/lombok-raya.jpg" class="w-full max-w-md object-cover rounded-lg shadow" alt="">
         </div>
-        <a href="/visiting" class="float-end mt-5 hover:text-amber-500">{{__('home.read_more')}} ... <i class="fa-solid fa-angle-right"></i> </a>
+        <a href="/visiting" class="float-end mt-5 hover:text-amber-500">{{__('home.read_more')}} ... <i
+                class="fa-solid fa-angle-right"></i> </a>
     </div>
     {{-- End Map --}}
 </div>
