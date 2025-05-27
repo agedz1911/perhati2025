@@ -44,7 +44,7 @@
     </div>
     @endif
 
-    <div>
+    <div class="mt-5">
         <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/bf283687-2076-43f2-aa4b-d9ab0c0b57a3/product-list/87956"></div>
         <noscript>Please enable javascript in your browser to book</noscript>
     </div>
