@@ -587,5 +587,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <span class="italic text-gray-500 text-xs">*tentative {{__('menu.atglance')}}</span>
 </div>
