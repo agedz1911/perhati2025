@@ -7,9 +7,27 @@ use Livewire\Component;
 
 class AtGlance extends Component
 {
-    public function render()
+    public $duadelapan;
+    public $duasembilan;
+    public $tigapuluh;
+    public $tigapuluhsatu;
+    public $satu;
+
+
+    public function mount()
     {
         $atglances = ModelsAtGlance::all();
-        return view('livewire.resources.at-glance', ['atglances' => $atglances]);
+        $this->duadelapan = $atglances->where('date', '2025-10-29')->sortBy('no_urut');
+        $this->duasembilan = $atglances->where('date', '2025-10-29')->sortBy('no_urut');
+        $this->tigapuluh = $atglances->where('date', '2025-10-30')->sortBy('no_urut');
+        $this->tigapuluhsatu = $atglances->where('date', '2025-10-31')->sortBy('no_urut');
+        $this->satu = $atglances->where('date', '2025-11-01')->sortBy('no_urut');
+    }
+
+    public function render()
+    {
+        return view(
+            'livewire.resources.at-glance',
+        );
     }
 }

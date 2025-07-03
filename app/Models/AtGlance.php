@@ -12,6 +12,14 @@ class AtGlance extends Model implements HasMedia
     use HasFactory, InteractsWithMedia;
 
     protected $fillable = [
-        'file_at_glances'
+        'file_at_glances',
+        'room',
+        'date',
+        'time',
+        'title',
+        'description',
+        'is_active',
+        'no_urut',
+        'color'
     ];
 }
