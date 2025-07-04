@@ -1,6 +1,6 @@
 <div>
     <div class="flex items-center justify-center">
-        <div x-data="{ openTab: 5 }" class="lg:w-11/12 w-full mx-auto">
+        <div x-data="{ openTab: 3 }" class="lg:w-11/12 w-full mx-auto">
             <div class="">
                 <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
                     <button x-on:click="openTab = 1" :class="{ 'bg-primary text-white': openTab === 1 }"
@@ -119,11 +119,11 @@
                                         @endforeach
                                     </td>
                                     <td class="align-top">
-                                        @foreach ($duasembilan as $mandalika)
-                                        @if ($mandalika->room == 'Mandalika')
-                                        <div class="border px-2 py-4 w-full rounded-md bg-[{{$mandalika->color}}]">
-                                            {{$mandalika->time}} <br>
-                                            {{$mandalika->title}}
+                                        @foreach ($duasembilan as $Pejanggik)
+                                        @if ($Pejanggik->room == 'Pejanggik')
+                                        <div class="border px-2 py-4 w-full rounded-md bg-[{{$Pejanggik->color}}]">
+                                            {{$Pejanggik->time}} <br>
+                                            {{$Pejanggik->title}}
                                         </div>
                                         @endif
                                         @endforeach
