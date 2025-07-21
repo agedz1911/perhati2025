@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-5 justify-between px-3 py-3 lg:flex-row ">
             <div class="w-full lg:pt-20">
                 <img src="images/logo/logo.png" class="max-w-xs" />
-                <h1 class="text-4xl mt-5 text-primary-800 mb-5 font-bold">{{__('home.title')}} PERHATI-KL</h1>
+                <h1 class="text-4xl mt-5 text-primary-800 mb-5 font-bold">{{__('home.title')}}</h1>
                 <h1 class="text-xl mt-5 text-perhati-800 mb-5 font-semibold italic">" {{__('home.theme')}} "</h1>
                 <div class="mt-5">
                     <div class="font-semibold mt-5 text-slate-500">

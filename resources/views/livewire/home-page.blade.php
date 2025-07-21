@@ -7,7 +7,7 @@
             <div class="lg:w-[500px] lg:-mt-40">
                 <img src="images/logo/logo.png" class="max-w-sm" alt="">
                 <div class="flex flex-col gap-4 mt-5">
-                    <h1 class="text-4xl font-semibold">{{ __('home.title')}} PERHATI-KL
+                    <h1 class="text-4xl font-semibold">{{ __('home.title')}}
                     </h1>
                     <h4 class="italic text-xl font-semibold text-gray-700">" {{ __('home.theme')}} "</h4>
                     <p class="text-stone-800">{{ __('home.hotel')}}, {{ __('home.venue')}} <br>
