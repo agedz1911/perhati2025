@@ -55,6 +55,11 @@
             </div>
             <div id="end"></div>
         </div>
+        <div class="container mx-auto items-center">
+            <div class="badge badge-primary w-full py-5">
+                <marquee><span class="font-semibold italic"> {{__('home.running_teks')}} </span></marquee>
+            </div>
+        </div>
     </div>
 
     {{-- Start About --}}
@@ -262,7 +267,8 @@
                     </div>
                     <div class="flex flex-col mb-4">
                         <p class="hover:underline hover:text-amber-300 hover:cursor-pointer">
-                            {{__('home.visit_direction')}}</p>
+                            {{__('home.visit_direction')}}
+                        </p>
                     </div>
                 </div>
             </div>
