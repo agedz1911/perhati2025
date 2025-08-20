@@ -309,11 +309,11 @@
                 </div>
                 <div class="flex flex-col mb-4">
                     <h4 class="title text-2xl font-bold mb-0">{{__('home.tour_reservation')}}</h4>
-                    <a href="https://forms.gle/KqmBaXheSu4TFf8fA" class="mt-0">{{__('home.link_tour')}}</p>
+                    <a href="https://forms.gle/KqmBaXheSu4TFf8fA" class="mt-0">{{__('home.link_tour')}}</a>
                 </div>
                 <div class="flex flex-col mb-4">
                     <h4 class="title text-2xl font-bold mb-0">{{__('home.sport_reservation')}}</h4>
-                    <a href="https://forms.gle/1CvzQuLHQwbaXH136" class="mt-0">{{__('home.link_sport')}}</p>
+                    <a href="https://forms.gle/1CvzQuLHQwbaXH136" class="mt-0">{{__('home.link_sport')}}</a>
                 </div>
                
             </div>
