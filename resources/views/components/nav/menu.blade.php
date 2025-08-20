@@ -86,7 +86,7 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              <li class="nav-item nav-item-has-children {{ request()->is('visiting*') ? 'text-perhati-500' : '' }}">
+              <li class="nav-item nav-item-has-children {{ request()->is('visiting*') || request()->is('social-program') ? 'text-perhati-500' : '' }}">
                 <a href="javascript:void(0)" class="nav-link-item drop-trigger">{{__('home.visit')}}
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
@@ -96,6 +96,9 @@
                   </li>
                   <li class="sub-menu--item">
                     <a href="/visiting#venue">{{__('home.visit_venue')}}</a>
+                  </li>
+                  <li class="sub-menu--item ">
+                    <a class="{{request()->is('social-program') ? 'text-perhati-500' : ''}}" href="/social-program">{{__('menu.social-program')}}</a>
                   </li>
                 </ul>
               </li>

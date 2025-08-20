@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Sponsor;
+use App\Models\tour;
 use App\Models\User;
 use App\Models\WelcomeMessage;
 use Livewire\Attributes\Title;
@@ -29,6 +30,7 @@ class HomePage extends Component
     {
         $sponsors = sponsor::where('is_active', true)->orderBy('no_urut', 'asc')->take(10)->get();
         $messages = WelcomeMessage::where('is_active', 1)->orderBy('no_urut', 'asc')->get();
-        return view('livewire.home-page', ['messages' => $messages, 'sponsors' => $sponsors]);
+        $tours = tour::take(6)->get();
+        return view('livewire.home-page', ['messages' => $messages, 'sponsors' => $sponsors, 'tours' => $tours]);
     }
 }

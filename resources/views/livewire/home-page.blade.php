@@ -244,6 +244,7 @@
             <a href="mailto:konasperhatikl2025@pharma-pro.com" class="btn">{{__('home.sponsorship_btn')}}</a>
         </div>
     </div>
+
     {{-- Start Map --}}
     <div class="border-t-2 border-dashed "></div>
     <div class="flex items-center justify-between mb-10 px-5 lg:px-20 mt-12">
@@ -282,6 +283,7 @@
         </div>
     </div>
     <div class="px-5 lg:px-20 pb-20 pt-10">
+
         <div class="flex flex-col md:flex-row gap-4 justify-between">
             <img src="images/lombok/sade.jpg" class="w-full max-w-md rounded-lg object-cover shadow" alt="">
             <img src="images/lombok/rinjani.jpg" class="w-full max-w-md object-cover rounded-lg shadow" alt="">
@@ -291,6 +293,51 @@
                 class="fa-solid fa-angle-right"></i> </a>
     </div>
     {{-- End Map --}}
+
+    <div class="border-t-2 border-dashed "></div>
+    <div class="flex items-center justify-between mb-10 px-5 lg:px-20 mt-12">
+        <div class="badge badge-primary p-8">
+            <h1 class="text-2xl text-white font-semibold">{{__('menu.social-program')}}</h1>
+        </div>
+        <i class="fa-solid text-primary fa-location-dot text-5xl"></i>
+    </div>
+    <div class="px-5 lg:px-20 pb-20 pt-10">
+        <div class="card w-full bg-primary text-primary pt-5 pb-5">
+            <div class="card-body text-white">
+                <div class="flex flex-col mb-4">
+                    <p>{{ __('home.tour_info')}} </p>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <h4 class="title text-2xl font-bold mb-0">{{__('home.tour_reservation')}}</h4>
+                    <a href="https://forms.gle/KqmBaXheSu4TFf8fA" class="mt-0">{{__('home.link_tour')}}</p>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <h4 class="title text-2xl font-bold mb-0">{{__('home.sport_reservation')}}</h4>
+                    <a href="https://forms.gle/1CvzQuLHQwbaXH136" class="mt-0">{{__('home.link_sport')}}</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-4">
+            @foreach ($tours as $tour)
+            <div class="card bg-base-100 image-full">
+                <figure>
+                    <img src="{{asset('storage/' . $tour->image)}}"
+                        class="w-full max-w-md rounded-lg object-cover shadow" alt="{{$tour->title}}" />
+                </figure>
+                <div class="card-body flex items-center justify-center">
+                    <h2 class="card-title">{{$tour->title}}</h2>
+                    {!! str($tour->description)->markdown()->sanitizeHtml() !!}
+                    <div class="card-actions">
+                        <a href="{{$tour->url}}" class="btn btn-outline">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+        <a href="/social-program" class="float-end mt-5 hover:text-amber-500">{{__('home.read_more')}} ... <i
+                class="fa-solid fa-angle-right"></i> </a>
+    </div>
 </div>
 
 
