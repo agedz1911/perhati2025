@@ -1,7 +1,7 @@
 <div class="bg-slate-50">
     <div class="pt-16 pb-36 lg:px-20 px-2 bg-local">
         <div class="flex-col flex gap-3 mb-10">
-            <h4 class="text-2xl text-primary font-semibold">{{ __('menu.social-program') }}</h4>
+            <h4 class="text-2xl text-primary font-semibold">{{ __('menu.social_program') }}</h4>
             <h1 class="text-4xl text-primary font-semibold">{{ __('menu.tour') }}</h1>
         </div>
 
@@ -23,7 +23,7 @@
         </div>
         <hr class="my-5 lg:my-10">
         <div class="flex-col flex gap-3 mb-10">
-            <h4 class="text-2xl text-primary font-semibold">{{ __('menu.social-program') }}</h4>
+            <h4 class="text-2xl text-primary font-semibold">{{ __('menu.social_program') }}</h4>
             <h1 class="text-4xl text-primary font-semibold">{{ __('menu.walk') }}</h1>
         </div>
 

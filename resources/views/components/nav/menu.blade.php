@@ -98,7 +98,7 @@
                     <a href="/visiting#venue">{{__('home.visit_venue')}}</a>
                   </li>
                   <li class="sub-menu--item ">
-                    <a class="{{request()->is('social-program') ? 'text-perhati-500' : ''}}" href="/social-program">{{__('menu.social-program')}}</a>
+                    <a class="{{request()->is('social-program') ? 'text-perhati-500' : ''}}" href="/social-program">{{__('menu.social_program')}}</a>
                   </li>
                 </ul>
               </li>

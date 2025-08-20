@@ -297,7 +297,7 @@
     <div class="border-t-2 border-dashed "></div>
     <div class="flex items-center justify-between mb-10 px-5 lg:px-20 mt-12">
         <div class="badge badge-primary p-8">
-            <h1 class="text-2xl text-white font-semibold">{{__('menu.social-program')}}</h1>
+            <h1 class="text-2xl text-white font-semibold">{{__('menu.social_program')}}</h1>
         </div>
         <i class="fa-solid text-primary fa-location-dot text-5xl"></i>
     </div>
