@@ -8,7 +8,7 @@ return [
     'read_more' => 'Baca Selengkapnya',
     'get_contact' => 'Hubungi kami',
     'use_link' => 'Tautan Berguna',
-    'event_date' => '30 Oktober - 1 November 2025',
+    'event_date' => '28 Oktober - 1 November 2025',
     'counter_day' => 'Hari',
     'counter_hour' => 'Jam',
     'counter_minute' => 'Menit',

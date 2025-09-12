@@ -9,7 +9,7 @@ return [
     'read_more' => 'Read More',
     'get_contact' => 'Get in touch with us',
     'use_link' => 'Usefull Links',
-    'event_date' => 'Oktober, 30th - November, 1st 2025',
+    'event_date' => 'Oktober, 28th - November, 1st 2025',
     'counter_day' => 'Days',
     'counter_hour' => 'Hours',
     'counter_minute' => 'Minutes',

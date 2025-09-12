@@ -64,6 +64,7 @@
                                     <th> Rinjani Ballroom </th>
                                     <th> Gili Air </th>
                                     <th> Sangkareang </th>
+                                    <th> Melati </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -154,6 +155,16 @@
                                         <div class="border px-2 py-4 w-full rounded-md bg-[{{$Sangkareang->color}}]">
                                             {{$Sangkareang->time}} <br>
                                             {{$Sangkareang->title}}
+                                        </div>
+                                        @endif
+                                        @endforeach
+                                    </td>
+                                    <td class="align-top">
+                                        @foreach ($duasembilan as $melati0)
+                                        @if ($melati0->room == 'Melati Ballroom')
+                                        <div class="border px-2 py-4 w-full rounded-md bg-[{{$Sangkareang->color}}]">
+                                            {{$melati0->time}} <br>
+                                            {{$melati0->title}}
                                         </div>
                                         @endif
                                         @endforeach

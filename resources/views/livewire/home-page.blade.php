@@ -20,8 +20,31 @@
                     </div>
                 </div>
             </div>
-            <img src="images/landing-new.png" class="lg:max-w-lg max-w-xs" />
+            <div class="w-full flex items-start justify-center relative">
+                <img src="images/landing-new.png" class="lg:max-w-lg max-w-xs" />
+                <div data-tip="{{__('menu.remarks')}} {{ __('home.title')}}"
+                    class="absolute tooltip glass p-2 rounded-lg top-1/2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                    <button onclick="openModal()" class="text-6xl text-perhati-600"><i
+                            class="fa-regular fa-circle-play"></i></button>
+                </div>
+            </div>
 
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box w-full max-w-3xl">
+                    <h3 class="text-lg font-bold">Welcome Remarks</h3>
+                    <iframe class="w-full rounded-lg h-96 max-h-full"
+                        src="https://www.youtube.com/embed/EEwjG5WVJ98?si=Bxh9cjaYtqfO64no" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     </div>
 
@@ -71,11 +94,15 @@
                     </p>
                 </div>
                 <div class="bg-gray-50 flex justify-center px-4 py-16">
-                    <iframe class="w-full rounded-lg" width="560" height="400"
+                    <iframe class="w-full rounded-lg" width="560" height="315" src="https://www.youtube.com/embed/Kcd5KA6jubM?si=vNVxu729CKcTdtSu"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    {{-- <iframe class="w-full rounded-lg" width="560" height="400"
                         src="https://www.youtube.com/embed/EEwjG5WVJ98?si=Bxh9cjaYtqfO64no" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
                 </div>
             </div>
             <div class="w-full lg:w-1/2 px-0 lg:pl-10 lg:py-5">
@@ -315,12 +342,12 @@
                     <h4 class="title text-2xl font-bold mb-0">{{__('home.sport_reservation')}}</h4>
                     <a href="https://forms.gle/1CvzQuLHQwbaXH136" class="mt-0">{{__('home.link_sport')}}</a>
                 </div>
-               
+
             </div>
         </div>
         <div class="flex flex-wrap gap-1 mt-4">
             @foreach ($tours as $tour)
-            <div class="card bg-base-100 image-full">
+            <div class="card bg-base-100 image-full w-full max-w-lg">
                 <figure>
                     <img src="{{asset('storage/' . $tour->image)}}"
                         class="w-full max-w-md rounded-lg object-cover shadow" alt="{{$tour->title}}" />
@@ -361,5 +388,17 @@
                 }, 1);
             }
         };
+    }
+
+    const modal = document.getElementById('my_modal_1');
+    const iframe = modal.querySelector('iframe');
+    const videoSrc = iframe.src;
+    modal.addEventListener('close', () => {
+        iframe.src = '';
+    });
+    // Saat membuka modal, set src kembali
+    function openModal() {
+        iframe.src = videoSrc;
+        modal.showModal();
     }
 </script>
