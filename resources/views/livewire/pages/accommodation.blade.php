@@ -48,6 +48,32 @@
         <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/bf283687-2076-43f2-aa4b-d9ab0c0b57a3/product-list/87956"></div>
         <noscript>Please enable javascript in your browser to book</noscript>
     </div>
+
+    <div class="flex-col flex gap-3 mb-10">
+        <h4 class="text-2xl text-primary font-semibold">{{ __('menu.accommodation') }}</h4>
+        <h1 class="text-4xl text-primary font-semibold">{{ __('menu.reservation_info') }}</h1>
+       
+    </div>
+
+    <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-lg">
+       
+        <details class="p-6 group " {{  'open'  }}    >
+            <summary class="flex items-center justify-between cursor-pointer">
+                <h5 class="text-xl font-semibold text-primary-900">
+                   {{__('home.hotel_cancel')}}
+                </h5>
+                <span class="relative flex-shrink-0 ml-1.5 w-5 h-5">
+                    <i class="fa-solid fa-eye absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"></i>
+                    <i class="fa-solid fa-eye-slash absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"></i>
+                </span>
+            </summary>
+
+            <p class="mt-4 leading-relaxed text-slate-500">
+               {{__('home.hotel_info_cancellation')}}
+            </p>
+        </details>
+       
+    </div>
 </div>
 
 <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=bf283687-2076-43f2-aa4b-d9ab0c0b57a3" async></script>
